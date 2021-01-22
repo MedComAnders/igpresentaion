@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="NewCareCommunicationProvenance"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>target</b>: <a href="MessageHeader-CareCommunicationMessageHeader.html">Generated Summary: <span title="{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes care-communication-message}">Care Communication Message</span></a></p><p><b>occurred</b>: 28. sep. 2020 14.34.56</p><p><b>recorded</b>: 28. sep. 2020 14.34.56</p><p><b>activity</b>: <span title="Codes: {http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes new-message}">A new message has been sent</span></p><h3>Agents</h3><table class="grid"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href="Organization-MessageSender.html">Generated Summary: id: 123456789012345, id: 1234567890123; name: Sender Organization</a></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="MessageHeader/CareCommunicationMessageHeader"/>
+  </target>
+  <occurredDateTime value="2020-09-28T12:34:56Z"/>
+  <recorded value="2020-09-28T12:34:56Z"/>
+  <activity>
+    <coding>
+      <system value="http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes"/>
+      <code value="new-message"/>
+    </coding>
+  </activity>
+  <agent>
+    <who>
+      <reference value="Organization/MessageSender"/>
+    </who>
+  </agent>
+</Provenance>

@@ -1,0 +1,6 @@
+{
+  "version": "1.0",
+  "fhirVersion": "[4.0.1]",
+  "date": "20210122101413",
+  "name": "dk.fhir.ig.medcom-core"
+}

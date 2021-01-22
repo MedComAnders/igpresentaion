@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="PractitionerClinic"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 378631000016009 (OFFICIAL)</p><p><b>name</b>: Test Practitioner clinic</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.208.176.1.1"/>
+    <value value="378631000016009"/>
+  </identifier>
+  <name value="Test Practitioner clinic"/>
+</Organization>

@@ -1,0 +1,12 @@
+{
+  "url": "http://medcomfhir.dk/fhir/core/1.0/ImplementationGuide/dk.fhir.ig.medcom-core",
+  "name": "MedComCore",
+  "package-id": "dk.fhir.ig.medcom-core",
+  "ig-ver": "1.0",
+  "date": "Fri, 22 Jan, 2021 10:15:14 +0100",
+  "errs": 47,
+  "warnings": 2,
+  "hints": 54,
+  "version": "4.0.1",
+  "tool": "4.5.0 (3)"
+}

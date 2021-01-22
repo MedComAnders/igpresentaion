@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medcom-messaging-vans-statisticalCode-combinations",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medcom-messaging-statisticalCodes.html\"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes</code></a></li></ul></div>"
+  },
+  "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-vans-statisticalCode-combinations",
+  "version": "1.0",
+  "name": "MedComMessagingVansStatisticalCodeCombinations",
+  "title": "MedCom Messaging Vans StatisticalCode Combinations",
+  "status": "active",
+  "date": "2021-01-22T10:15:14+01:00",
+  "publisher": "MedCom",
+  "contact": [
+    {
+      "name": "MedCom",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.medcom.dk"
+        }
+      ]
+    }
+  ],
+  "description": "MedCom Messaging Vans StatisticalCode Combinations",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DK",
+          "display": "Denmark"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes"
+      }
+    ]
+  }
+}

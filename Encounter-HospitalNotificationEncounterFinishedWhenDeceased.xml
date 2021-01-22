@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="HospitalNotificationEncounterFinishedWhenDeceased"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 7b9f8497-3314-4535-8f86-20df7b5f4d55</p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}">inpatient encounter</span></p><p><b>subject</b>: <a href="Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931.html">Generated Summary: id: 0101010141; Erik Clausen (OFFICIAL); Phone: 24533421; deceased</a></p><p><b>episodeOfCare</b>: <span></span></p><p><b>period</b>: 13. jan. 2021 14.44.14 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href="Organization-PractitionerClinic.html">Generated Summary: id: 378631000016009 (OFFICIAL); name: Test Practitioner clinic</a></p></div>
+  </text>
+  <identifier>
+    <value value="7b9f8497-3314-4535-8f86-20df7b5f4d55"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="IMP"/>
+  </class>
+  <subject>
+    <reference value="Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931"/>
+  </subject>
+  <episodeOfCare>
+    <identifier>
+      <system value="https://www.esundhed.dk/Registre/Landspatientsregisteret"/>
+      <value value="200040a2-e05d-4af3-91e7-5febfa8ad0b3"/>
+    </identifier>
+  </episodeOfCare>
+  <period>
+    <start value="2021-01-13T13:44:14Z"/>
+  </period>
+  <serviceProvider>
+    <reference value="Organization/PractitionerClinic"/>
+  </serviceProvider>
+</Encounter>

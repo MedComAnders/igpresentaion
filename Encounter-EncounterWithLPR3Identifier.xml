@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="EncounterWithLPR3Identifier"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: unknown</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span></p><p><b>subject</b>: <a href="Patient-733cef33-3626-422b-955d-d506aaa65fe1.html">Generated Summary: id: 0102030405; Eric Flame (OFFICIAL); Phone: 12345678</a></p><p><b>episodeOfCare</b>: <span></span></p></div>
+  </text>
+  <status value="unknown"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+  </class>
+  <subject>
+    <reference value="Patient/733cef33-3626-422b-955d-d506aaa65fe1"/>
+  </subject>
+  <episodeOfCare>
+    <identifier>
+      <system value="https://www.esundhed.dk/Registre/Landspatientsregisteret"/>
+      <value value="12345678-1234-1234-1234-123456789012"/>
+    </identifier>
+  </episodeOfCare>
+</Encounter>

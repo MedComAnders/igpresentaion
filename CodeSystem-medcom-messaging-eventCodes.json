@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medcom-messaging-eventCodes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">empty-message<a name=\"medcom-messaging-eventCodes-empty-message\"> </a></td><td>Message with no content</td></tr><tr><td style=\"white-space:nowrap\">care-communication-message<a name=\"medcom-messaging-eventCodes-care-communication-message\"> </a></td><td>Care Communication Message</td></tr><tr><td style=\"white-space:nowrap\">hospital-notification-message<a name=\"medcom-messaging-eventCodes-hospital-notification-message\"> </a></td><td>Hospital Notification Message</td></tr></table></div>"
+  },
+  "url": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes",
+  "version": "1.0",
+  "name": "MedComMessageEventCodes",
+  "title": "MedCom Message Events",
+  "status": "active",
+  "date": "2021-01-22T10:15:14+01:00",
+  "publisher": "MedCom",
+  "contact": [
+    {
+      "name": "MedCom",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.medcom.dk"
+        }
+      ]
+    }
+  ],
+  "description": "Message events for MedCom messages",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DK",
+          "display": "Denmark"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "empty-message",
+      "display": "Message with no content"
+    },
+    {
+      "code": "care-communication-message",
+      "display": "Care Communication Message"
+    },
+    {
+      "code": "hospital-notification-message",
+      "display": "Hospital Notification Message"
+    }
+  ]
+}

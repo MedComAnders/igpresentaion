@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="HospitalNotificationEncounterOnLeave"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1234567890</p><p><b>status</b>: onleave</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}">inpatient encounter</span></p><p><b>subject</b>: <a href="Patient-733cef33-3626-422b-955d-d506aaa65fe1.html">Generated Summary: id: 0102030405; Eric Flame (OFFICIAL); Phone: 12345678</a></p><p><b>episodeOfCare</b>: <span></span></p><p><b>period</b>: 15. okt. 2020 15.44.14 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href="Organization-BurnCenter.html">Generated Summary: id: 123456789012345 (OFFICIAL); name: Aros Burn Center</a></p></div>
+  </text>
+  <identifier>
+    <value value="1234567890"/>
+  </identifier>
+  <status value="onleave"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="IMP"/>
+  </class>
+  <subject>
+    <reference value="Patient/733cef33-3626-422b-955d-d506aaa65fe1"/>
+  </subject>
+  <episodeOfCare>
+    <identifier>
+      <system value="https://www.esundhed.dk/Registre/Landspatientsregisteret"/>
+      <value value="87654321-1234-1234-1234-123456789012"/>
+    </identifier>
+  </episodeOfCare>
+  <period>
+    <start value="2020-10-15T13:44:14Z"/>
+  </period>
+  <serviceProvider>
+    <reference value="Organization/BurnCenter"/>
+  </serviceProvider>
+</Encounter>

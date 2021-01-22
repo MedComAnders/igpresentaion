@@ -1,0 +1,135 @@
+{
+  "resourceType": "Bundle",
+  "id": "AcknowledgementExample-ok",
+  "meta": {
+    "profile": [
+      "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement"
+    ]
+  },
+  "type": "message",
+  "timestamp": "2021-01-01T12:34:56Z",
+  "entry": [
+    {
+      "fullUrl": "MessageHeader/AcknowledgementHeaderExample-ok",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "AcknowledgementHeaderExample-ok",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>event</b>: <span title=\"{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes empty-message}\">Message with no content</span></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td></td><td><a href=\"http://medcomfhir.dk/unknown\">http://medcomfhir.dk/unknown</a></td><td><a href=\"#Organization_MessageReceiver\">See above (Organization/MessageReceiver)</a></td></tr></table><p><b>sender</b>: <a href=\"#Organization_MessageSender\">See above (Organization/MessageSender)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://medcomfhir.dk/unknown\">http://medcomfhir.dk/unknown</a></td></tr></table><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Details</b></td></tr><tr><td>*</td><td>382fb8a3-6725-41e2-a615-2b1cfcfe9931</td><td>fatal-error</td><td><a href=\"OperationOutcome-OperationOutcome-error.html\">Generated Summary: </a></td></tr></table></div>"
+        },
+        "eventCoding": {
+          "system": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes",
+          "code": "empty-message"
+        },
+        "destination": [
+          {
+            "extension": [
+              {
+                "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-destinationUseExtension",
+                "valueCoding": {
+                  "system": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-destinationUse",
+                  "code": "primary"
+                }
+              }
+            ],
+            "endpoint": "http://medcomfhir.dk/unknown",
+            "receiver": {
+              "reference": "Organization/MessageReceiver"
+            }
+          }
+        ],
+        "sender": {
+          "reference": "Organization/MessageSender"
+        },
+        "source": {
+          "endpoint": "http://medcomfhir.dk/unknown"
+        },
+        "response": {
+          "identifier": "382fb8a3-6725-41e2-a615-2b1cfcfe9931",
+          "code": "fatal-error",
+          "details": {
+            "reference": "OperationOutcome/OperationOutcome-error"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/MessageSender",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "MessageSender",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123456789012345, id: 1234567890123</p><p><b>name</b>: Sender Organization</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.208.176.1.1",
+            "value": "123456789012345"
+          },
+          {
+            "system": "urn:oid:1.3.88",
+            "value": "1234567890123"
+          }
+        ],
+        "name": "Sender Organization"
+      }
+    },
+    {
+      "fullUrl": "Organization/MessageReceiver",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "MessageReceiver",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 543210987654321, id: 3210987654321</p><p><b>name</b>: Receiver Organization</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.208.176.1.1",
+            "value": "543210987654321"
+          },
+          {
+            "system": "urn:oid:1.3.88",
+            "value": "3210987654321"
+          }
+        ],
+        "name": "Receiver Organization"
+      }
+    },
+    {
+      "fullUrl": "MedComMessagingAcknowledgementHeader/OperationOutcome-error",
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "OperationOutcome-ok",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Issues</h3><table class=\"grid\"><tr><td>-</td><td><b>Severity</b></td><td><b>Code</b></td><td><b>Diagnostics</b></td></tr><tr><td>*</td><td>information</td><td>structure</td><td>Invalid messages from your system 0%</td></tr></table></div>"
+        },
+        "issue": [
+          {
+            "severity": "information",
+            "code": "structure",
+            "diagnostics": "Invalid messages from your system 0%"
+          }
+        ]
+      }
+    }
+  ]
+}

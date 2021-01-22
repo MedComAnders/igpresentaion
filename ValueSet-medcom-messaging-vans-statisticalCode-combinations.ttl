@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-vans-statisticalCode-combinations> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medcom-messaging-vans-statisticalCode-combinations"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medcom-messaging-statisticalCodes.html\"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-vans-statisticalCode-combinations"];
+  fhir:ValueSet.version [ fhir:value "1.0"];
+  fhir:ValueSet.name [ fhir:value "MedComMessagingVansStatisticalCodeCombinations"];
+  fhir:ValueSet.title [ fhir:value "MedCom Messaging Vans StatisticalCode Combinations"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-01-22T10:15:14+01:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "MedCom"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MedCom" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.medcom.dk" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "MedCom Messaging Vans StatisticalCode Combinations"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DK" ];
+       fhir:Coding.display [ fhir:value "Denmark" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-vans-statisticalCode-combinations.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="example"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: planned</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span></p><p><b>subject</b>: <a href="Patient-733cef33-3626-422b-955d-d506aaa65fe1.html">Generated Summary: id: 0102030405; Eric Flame (OFFICIAL); Phone: 12345678</a></p></div>
+  </text>
+  <status value="planned"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+  </class>
+  <subject>
+    <reference value="Patient/733cef33-3626-422b-955d-d506aaa65fe1"/>
+  </subject>
+</Encounter>

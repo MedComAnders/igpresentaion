@@ -1,0 +1,35 @@
+{
+  "resourceType": "Provenance",
+  "id": "HospitalNotificationAdmitProvenance",
+  "meta": {
+    "profile": [
+      "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>target</b>: <a href=\"MessageHeader-HospitalNotificationAdmittedMessageHeader.html\">Generated Summary: <span title=\"{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes hospital-notification-message}\">Hospital Notification Message</span></a></p><p><b>occurred</b>: 15. okt. 2020 15.44.14</p><p><b>recorded</b>: 15. okt. 2020 15.45.15</p><p><b>activity</b>: <span title=\"Codes: {http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes admit-inpatient}\">Start hospital stay-admission</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href=\"Organization-MessageSender.html\">Generated Summary: id: 123456789012345, id: 1234567890123; name: Sender Organization</a></td></tr></table></div>"
+  },
+  "target": [
+    {
+      "reference": "MessageHeader/HospitalNotificationAdmittedMessageHeader"
+    }
+  ],
+  "occurredDateTime": "2020-10-15T13:44:14Z",
+  "recorded": "2020-10-15T13:45:15Z",
+  "activity": {
+    "coding": [
+      {
+        "system": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+        "code": "admit-inpatient"
+      }
+    ]
+  },
+  "agent": [
+    {
+      "who": {
+        "reference": "Organization/MessageSender"
+      }
+    }
+  ]
+}

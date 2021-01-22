@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationAdmittedMessageHeader> a fhir:MessageHeader;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HospitalNotificationAdmittedMessageHeader"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>MedCom Report of Admission Extension</b>: true</p><p><b>event</b>: <span title=\"{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes hospital-notification-message}\">Hospital Notification Message</span></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td></td><td><a href=\"http://medcomfhir.dk/unknown\">http://medcomfhir.dk/unknown</a></td><td><a href=\"Organization-MessageReceiver.html\">Generated Summary: id: 543210987654321, id: 3210987654321; name: Receiver Organization</a></td></tr></table><p><b>sender</b>: <a href=\"Organization-MessageSender.html\">Generated Summary: id: 123456789012345, id: 1234567890123; name: Sender Organization</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://medcomfhir.dk/unknown\">http://medcomfhir.dk/unknown</a></td></tr></table><p><b>focus</b>: <a href=\"Encounter-HospitalNotificationEncounterInProgress.html\">Generated Summary: id: 1234567890; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 15. okt. 2020 15.44.14 --&gt; (ongoing)</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-reportOfAdmissionExtension" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:MessageHeader.eventCoding [
+     fhir:Coding.system [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes" ];
+     fhir:Coding.code [ fhir:value "hospital-notification-message" ]
+  ];
+  fhir:MessageHeader.destination [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-destinationUseExtension" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-destinationUse" ];
+         fhir:Coding.code [ fhir:value "primary" ]
+       ]
+     ];
+     fhir:MessageHeader.destination.endpoint [ fhir:value "http://medcomfhir.dk/unknown" ];
+     fhir:MessageHeader.destination.receiver [
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/MessageReceiver>;
+       fhir:Reference.reference [ fhir:value "Organization/MessageReceiver" ]
+     ]
+  ];
+  fhir:MessageHeader.sender [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/MessageSender>;
+     fhir:Reference.reference [ fhir:value "Organization/MessageSender" ]
+  ];
+  fhir:MessageHeader.source [
+     fhir:MessageHeader.source.endpoint [ fhir:value "http://medcomfhir.dk/unknown" ]
+  ];
+  fhir:MessageHeader.focus [
+     fhir:index 0;
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterInProgress>;
+     fhir:Reference.reference [ fhir:value "Encounter/HospitalNotificationEncounterInProgress" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationAdmittedMessageHeader.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

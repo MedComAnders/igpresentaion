@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medcom-core-encounterActCodes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"medcom-core-encounterActCodes-other\"> </a></td><td>Other encounter class</td></tr></table></div>"
+  },
+  "url": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes",
+  "version": "1.0",
+  "name": "MedComCoreEncounterActCodes",
+  "title": "MedCom Encounter Act Codes",
+  "status": "active",
+  "date": "2021-01-22T10:15:14+01:00",
+  "publisher": "MedCom",
+  "contact": [
+    {
+      "name": "MedCom",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.medcom.dk"
+        }
+      ]
+    }
+  ],
+  "description": "Codes added to encounter class value set for MedCom messages",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DK",
+          "display": "Denmark"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "other",
+      "display": "Other encounter class"
+    }
+  ]
+}

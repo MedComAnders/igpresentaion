@@ -1,0 +1,268 @@
+[
+  {
+    "id": "medcom-careCommunication-categoryCodes",
+    "type": "CodeSystem",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+    "version": "1.0",
+    "name": "MedComCareCommunicationCategoryCodes"
+  },
+  {
+    "id": "medcom-core-encounterActCodes",
+    "type": "CodeSystem",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes",
+    "version": "1.0",
+    "name": "MedComCoreEncounterActCodes"
+  },
+  {
+    "id": "medcom-messaging-activityCodes",
+    "type": "CodeSystem",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+    "version": "1.0",
+    "name": "MedComMessageActivityCodes"
+  },
+  {
+    "id": "medcom-messaging-destinationUse",
+    "type": "CodeSystem",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-destinationUse",
+    "version": "1.0",
+    "name": "MedComMessagingDesinationUseCodes"
+  },
+  {
+    "id": "medcom-messaging-eventCodes",
+    "type": "CodeSystem",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes",
+    "version": "1.0",
+    "name": "MedComMessageEventCodes"
+  },
+  {
+    "id": "medcom-messaging-statisticalCodes",
+    "type": "CodeSystem",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+    "version": "1.0",
+    "name": "MedComMessagingStatisticalCodes"
+  },
+  {
+    "id": "dk.fhir.ig.medcom-core",
+    "type": "ImplementationGuide",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ImplementationGuide/dk.fhir.ig.medcom-core",
+    "version": "1.0",
+    "name": "MedComCore"
+  },
+  {
+    "id": "medcom-careCommunication-communication",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication",
+    "version": "1.0",
+    "name": "MedComCareCommunication"
+  },
+  {
+    "id": "medcom-careCommunication-message",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message",
+    "version": "1.0",
+    "name": "MedComCareCommunicationMessage"
+  },
+  {
+    "id": "medcom-careCommunication-messageHeader",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader",
+    "version": "1.0",
+    "name": "MedComCareCommunicationMessageHeader"
+  },
+  {
+    "id": "medcom-core-author-extension",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-author-extension",
+    "version": "1.0",
+    "name": "MedComCorePayloadAuthorExtension"
+  },
+  {
+    "id": "medcom-core-datetime-extension",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-datetime-extension",
+    "version": "1.0",
+    "name": "MedComCorePayloadDateTimeExtension"
+  },
+  {
+    "id": "medcom-core-eanIdentifier",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-eanIdentifier",
+    "version": "1.0",
+    "name": "MedComCoreEANIdentifier"
+  },
+  {
+    "id": "medcom-core-encounter",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-encounter",
+    "version": "1.0",
+    "name": "MedComCoreEncounter"
+  },
+  {
+    "id": "medcom-core-lpr3Encounter",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter",
+    "version": "1.0",
+    "name": "MedComCoreLpr3Encounter"
+  },
+  {
+    "id": "medcom-core-organization",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization",
+    "version": "1.0",
+    "name": "MedComCoreOrganization"
+  },
+  {
+    "id": "medcom-core-patient",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient",
+    "version": "1.0",
+    "name": "MedComCorePatient"
+  },
+  {
+    "id": "medcom-hospitalNotification-encounter",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter",
+    "version": "1.0",
+    "name": "MedComHospitalNotificationEncounter"
+  },
+  {
+    "id": "medcom-hospitalNotification-message",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message",
+    "version": "1.0",
+    "name": "MedComHospitalNotificationMessage"
+  },
+  {
+    "id": "medcom-hospitalNotification-messageHeader",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader",
+    "version": "1.0",
+    "name": "MedComHospitalNotificationMessageHeader"
+  },
+  {
+    "id": "medcom-messaging-acknowledgement",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement",
+    "version": "1.0",
+    "name": "MedComMessagingAcknowledgement"
+  },
+  {
+    "id": "medcom-messaging-acknowledgementHeader",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader",
+    "version": "1.0",
+    "name": "MedComMessagingAcknowledgementHeader"
+  },
+  {
+    "id": "medcom-messaging-destinationUseExtension",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-destinationUseExtension",
+    "version": "1.0",
+    "name": "MedComMessagingDestinationUseExtension"
+  },
+  {
+    "id": "medcom-messaging-message",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-message",
+    "version": "1.0",
+    "name": "MedComMessagingMessage"
+  },
+  {
+    "id": "medcom-messaging-messageHeader",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader",
+    "version": "1.0",
+    "name": "MedComMessagingMessageHeader"
+  },
+  {
+    "id": "medcom-messaging-organization",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization",
+    "version": "1.0",
+    "name": "MedComMessagingOrganization"
+  },
+  {
+    "id": "medcom-messaging-provenance",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance",
+    "version": "1.0",
+    "name": "MedComMessagingProvenance"
+  },
+  {
+    "id": "medcom-messaging-reportOfAdmissionExtension",
+    "type": "StructureDefinition",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-reportOfAdmissionExtension",
+    "version": "1.0",
+    "name": "MedComHospitalNotificationReportOfAdmissionExtension"
+  },
+  {
+    "id": "medcom-careCommunication-categories",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-categories",
+    "version": "1.0",
+    "name": "MedComCareCommunicationCategories"
+  },
+  {
+    "id": "medcom-careCommunication-messagingActivities",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-messagingActivities",
+    "version": "1.0",
+    "name": "MedComCareCommunicationMessageActivities"
+  },
+  {
+    "id": "medcom-careCommunication-requestPriority",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-requestPriority",
+    "version": "1.0",
+    "name": "MedComCareCommunicationRequestPriority"
+  },
+  {
+    "id": "medcom-core-attachmentMimeTypes",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-attachmentMimeTypes",
+    "version": "1.0",
+    "name": "MedComCoreAttachmentMimeTypes"
+  },
+  {
+    "id": "medcom-core-encounterClass",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-encounterClass",
+    "version": "1.0",
+    "name": "MedComCoreEncounterClass"
+  },
+  {
+    "id": "medcom-hospitalNotification-encounterClass",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-encounterClass",
+    "version": "1.0",
+    "name": "MedComHospitalNotificationEncounterClass"
+  },
+  {
+    "id": "medcom-hospitalNotification-encounterstatus",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-encounterstatus",
+    "version": "1.0",
+    "name": "MedComHospitalNotificationEncounterStatus"
+  },
+  {
+    "id": "medcom-hospitalNotification-messageActivities",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-messageActivities",
+    "version": "1.0",
+    "name": "MedComHospitalNotificationMessageActivities"
+  },
+  {
+    "id": "medcom-messaging-messageTypes",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-messageTypes",
+    "version": "1.0",
+    "name": "MedComMessagingMessageTypes"
+  },
+  {
+    "id": "medcom-messaging-vans-statisticalCode-combinations",
+    "type": "ValueSet",
+    "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-vans-statisticalCode-combinations",
+    "version": "1.0",
+    "name": "MedComMessagingVansStatisticalCodeCombinations"
+  }
+]

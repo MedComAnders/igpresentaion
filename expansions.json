@@ -1,0 +1,883 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "44170fb4-e3b6-4f16-bc5c-828e9ea2b953",
+  "meta" : {
+    "lastUpdated" : "2021-01-22T10:15:14.149+01:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-categories",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-careCommunication-categories",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html\">MedCom Care Communication Categories v1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html\"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-outpatient\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-outpatient\">outpatient</a></td><td>Outpatient</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-decease\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-decease\">decease</a></td><td>Decease</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-carecoordination\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-carecoordination\">carecoordination</a></td><td>Care Coordination</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-assistive-devices\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-assistive-devices\">assistive-devices</a></td><td>Assistive Devices</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-medicine\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-medicine\">medicine</a></td><td>Medicine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-psychiatry-social-disability\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-psychiatry-social-disability\">psychiatry-social-disability</a></td><td>Psychiatry, Social, Disability</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-healthcare\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-healthcare\">healthcare</a></td><td>Healthcare</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-nursing\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-nursing\">nursing</a></td><td>Nursing</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-telemedicine\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-telemedicine\">telemedicine</a></td><td>Telemedicine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-training\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-training\">training</a></td><td>Training</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-discharge\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-discharge\">discharge</a></td><td>Discharge</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-regarding-referral\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-regarding-referral\">regarding-referral</a></td><td>Regarding Referral</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-assessment\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-assessment\">assessment</a></td><td>Assessment</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-examination-results\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-examination-results\">examination-results</a></td><td>Examination Results</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-careCommunication-categoryCodes-other\"> </a><a href=\"CodeSystem-medcom-careCommunication-categoryCodes.html#medcom-careCommunication-categoryCodes-other\">other</a></td><td>Other</td><td/></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-categories",
+      "version" : "1.0",
+      "name" : "MedComCareCommunicationCategories",
+      "title" : "MedCom Care Communication Category Codes",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "ValueSet containing category codes for care communication messages",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ad90625a-6202-4b8f-9b18-3571e252df73",
+        "timestamp" : "2021-01-22T10:17:30+01:00",
+        "total" : 15,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes|1.0"
+        }],
+        "contains" : [{
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "outpatient",
+          "display" : "Outpatient"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "decease",
+          "display" : "Decease"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "carecoordination",
+          "display" : "Care Coordination"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "assistive-devices",
+          "display" : "Assistive Devices"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "medicine",
+          "display" : "Medicine"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "psychiatry-social-disability",
+          "display" : "Psychiatry, Social, Disability"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "healthcare",
+          "display" : "Healthcare"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "nursing",
+          "display" : "Nursing"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "telemedicine",
+          "display" : "Telemedicine"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "training",
+          "display" : "Training"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "discharge",
+          "display" : "Discharge"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "regarding-referral",
+          "display" : "Regarding Referral"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "assessment",
+          "display" : "Assessment"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "examination-results",
+          "display" : "Examination Results"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes",
+          "code" : "other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-messagingActivities",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-careCommunication-messagingActivities",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medcom-messaging-activityCodes.html\">MedCom Message Activity Codes v1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-medcom-messaging-activityCodes.html\"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-new-message\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-new-message\">new-message</a></td><td>A new message has been sent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-forward-message\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-forward-message\">forward-message</a></td><td>A message has been forwarded and potentially changed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-reply-message\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-reply-message\">reply-message</a></td><td>A message has been replied to</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-retract-message\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-retract-message\">retract-message</a></td><td>A message has been retracted/cancelled</td><td/></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-messagingActivities",
+      "version" : "1.0",
+      "name" : "MedComCareCommunicationMessageActivities",
+      "title" : "MedCom Care Communication Message Activity Codes",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "ValueSet containg activity codes for care communication messages",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3eb13028-8191-4354-921e-38ce2682d811",
+        "timestamp" : "2021-01-22T10:17:30+01:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes|1.0"
+        }],
+        "contains" : [{
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "new-message",
+          "display" : "A new message has been sent"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "forward-message",
+          "display" : "A message has been forwarded and potentially changed"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "reply-message",
+          "display" : "A message has been replied to"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "retract-message",
+          "display" : "A message has been retracted/cancelled"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-requestPriority",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-careCommunication-requestPriority",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-request-priority.html\">RequestPriority v4.0.1 (CodeSystem)</a></p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-request-priority.html\"><code>http://hl7.org/fhir/request-priority</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-request-priority-routine\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-request-priority.html#request-priority-routine\">routine</a></td><td>Routine</td><td>The request has normal priority.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-request-priority-asap\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-request-priority.html#request-priority-asap\">asap</a></td><td>ASAP</td><td>The request should be actioned as soon as possible - higher priority than urgent.</td></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-requestPriority",
+      "version" : "1.0",
+      "name" : "MedComCareCommunicationRequestPriority",
+      "title" : "MedCom Care Request Priority Codes",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "ValueSet containg priority codes for care communication messages",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1df30f8e-8144-4e12-8f82-c8572a2e075e",
+        "timestamp" : "2021-01-22T10:17:30+01:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/request-priority|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/request-priority",
+          "code" : "routine",
+          "display" : "Routine"
+        },
+        {
+          "system" : "http://hl7.org/fhir/request-priority",
+          "code" : "asap",
+          "display" : "ASAP"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p>All codes from system <code>urn:ietf:bcp:13</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-bcp-13-application-pdf\"> </a>application/pdf</td><td>Adobe Portable Document Format</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-bcp-13-image-bmp\"> </a>image/bmp</td><td>Bitmap Image File</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-bcp-13-image-gif\"> </a>image/gif</td><td>Graphics Interchange Format</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-bcp-13-image-jpeg\"> </a>image/jpeg</td><td>JPEG Image</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-bcp-13-image-png\"> </a>image/png</td><td>Portable Network Graphics (PNG)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-bcp-13-image-tiff\"> </a>image/tiff</td><td>Tagged Image File Format (TIFF)</td></tr></table></div>"
+      },
+      "status" : "active",
+      "expansion" : {
+        "identifier" : "urn:uuid:8c89f1c7-ad07-43c2-9638-1d26487a430c",
+        "timestamp" : "2020-12-18T12:41:39.138Z",
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }],
+        "contains" : [{
+          "system" : "urn:ietf:bcp:13",
+          "code" : "application/pdf",
+          "display" : "Adobe Portable Document Format"
+        },
+        {
+          "system" : "urn:ietf:bcp:13",
+          "code" : "image/bmp",
+          "display" : "Bitmap Image File"
+        },
+        {
+          "system" : "urn:ietf:bcp:13",
+          "code" : "image/gif",
+          "display" : "Graphics Interchange Format"
+        },
+        {
+          "system" : "urn:ietf:bcp:13",
+          "code" : "image/jpeg",
+          "display" : "JPEG Image"
+        },
+        {
+          "system" : "urn:ietf:bcp:13",
+          "code" : "image/png",
+          "display" : "Portable Network Graphics (PNG)"
+        },
+        {
+          "system" : "urn:ietf:bcp:13",
+          "code" : "image/tiff",
+          "display" : "Tagged Image File Format (TIFF)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-encounterClass",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-core-encounterClass",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 12 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-medcom-core-encounterActCodes.html\">MedCom Encounter Act Codes v1.0 (CodeSystem)</a></li><li><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html\">ActCode v2.0.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-AMB\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">AMB</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>ambulatory</td><td>A comprehensive term for health care provided in a healthcare facility (e.g. a practitioneraTMs office, clinic setting, or hospital) on a nonresident basis. The term ambulatory usually implies that the patient has come to the location and is not assigned to a bed. Sometimes referred to as an outpatient encounter.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-EMER\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-EMER\">EMER</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>emergency</td><td>A patient encounter that takes place at a dedicated healthcare service delivery location where the patient receives immediate evaluation and treatment, provided until the patient can be discharged or responsibility for the patient's care is transferred elsewhere (for example, the patient could be admitted as an inpatient or transferred to another facility.)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-FLD\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-FLD\">FLD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>field</td><td>A patient encounter that takes place both outside a dedicated service delivery location and outside a patient's residence. Example locations might include an accident site and at a supermarket.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-HH\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-HH\">HH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>home health</td><td>Healthcare encounter that takes place in the residence of the patient or a designee</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-IMP\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">IMP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>inpatient encounter</td><td>A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-ACUTE\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE\">ACUTE</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>inpatient acute</td><td>An acute inpatient encounter.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-NONAC\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-NONAC\">NONAC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>inpatient non-acute</td><td>Any category of inpatient encounter except 'acute'</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-OBSENC\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC\">OBSENC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>observation encounter</td><td>An encounter where the patient usually will start in different encounter, such as one in the emergency department (EMER) but then transition to this type of encounter because they require a significant period of treatment and monitoring to determine whether or not their condition warrants an inpatient admission or discharge. In the majority of cases the decision about admission or discharge will occur within a time period determined by local, regional or national regulation, often between 24 and 48 hours.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-PRENC\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-PRENC\">PRENC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>pre-admission</td><td>A patient encounter where patient is scheduled or planned to receive service delivery in the future, and the patient is given a pre-admission account number. When the patient comes back for subsequent service, the pre-admission encounter is selected and is encapsulated into the service registration, and a new account number is generated.\r\n\r\n*Usage Note:* This is intended to be used in advance of encounter types such as ambulatory, inpatient encounter, virtual, etc.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-SS\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-SS\">SS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>short stay</td><td>An encounter where the patient is admitted to a health care facility for a predetermined length of time, usually less than 24 hours.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-VR\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-VR\">VR</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>virtual</td><td>A patient encounter where the patient and the practitioner(s) are not in the same physical location. Examples include telephone conference, email exchange, robotic surgery, and televideo conference.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-core-encounterActCodes-other\"> </a><a href=\"CodeSystem-medcom-core-encounterActCodes.html#medcom-core-encounterActCodes-other\">other</a></td><td>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes</td><td>Other encounter class</td><td/></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-encounterClass",
+      "version" : "1.0",
+      "name" : "MedComCoreEncounterClass",
+      "title" : "MedCom Core Encounter Class Codes",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "ValueSet containg class codes for MedCom core encounter",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3aa942d9-ea26-4118-8d5d-58af47618db1",
+        "timestamp" : "2021-01-22T10:17:31+01:00",
+        "total" : 12,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|2.0.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes|1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "AMB",
+          "display" : "ambulatory"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "EMER",
+          "display" : "emergency"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "FLD",
+          "display" : "field"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "HH",
+          "display" : "home health"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "IMP",
+          "display" : "inpatient encounter"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "ACUTE",
+          "display" : "inpatient acute"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "NONAC",
+          "display" : "inpatient non-acute"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "OBSENC",
+          "display" : "observation encounter"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "PRENC",
+          "display" : "pre-admission"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "SS",
+          "display" : "short stay"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "VR",
+          "display" : "virtual"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes",
+          "code" : "other",
+          "display" : "Other encounter class"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-encounterClass",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-hospitalNotification-encounterClass",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-medcom-core-encounterActCodes.html\">MedCom Encounter Act Codes v1.0 (CodeSystem)</a></li><li><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html\">ActCode v2.0.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-EMER\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-EMER\">EMER</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>emergency</td><td>A patient encounter that takes place at a dedicated healthcare service delivery location where the patient receives immediate evaluation and treatment, provided until the patient can be discharged or responsibility for the patient's care is transferred elsewhere (for example, the patient could be admitted as an inpatient or transferred to another facility.)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActCode-IMP\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">IMP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>inpatient encounter</td><td>A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-core-encounterActCodes-other\"> </a><a href=\"CodeSystem-medcom-core-encounterActCodes.html#medcom-core-encounterActCodes-other\">other</a></td><td>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes</td><td>Other encounter class</td><td/></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-encounterClass",
+      "version" : "1.0",
+      "name" : "MedComHospitalNotificationEncounterClass",
+      "title" : "MedCom hospital notification encounter class Codes",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "ValueSet containg class codes for hospital notification encounter",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:cbc95535-9221-480c-b8c5-6da8f7a278e0",
+        "timestamp" : "2021-01-22T10:17:31+01:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|2.0.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes|1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "EMER",
+          "display" : "emergency"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "IMP",
+          "display" : "inpatient encounter"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes",
+          "code" : "other",
+          "display" : "Other encounter class"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-encounterstatus",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-hospitalNotification-encounterstatus",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html\">EncounterStatus v4.0.1 (CodeSystem)</a></p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html\"><code>http://hl7.org/fhir/encounter-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-encounter-status-in-progress\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-in-progress\">in-progress</a></td><td>In Progress</td><td>The Encounter has begun and the patient is present / the practitioner and the patient are meeting.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-encounter-status-onleave\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-onleave\">onleave</a></td><td>On Leave</td><td>The Encounter has begun, but the patient is temporarily on leave.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-encounter-status-finished\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-finished\">finished</a></td><td>Finished</td><td>The Encounter has ended.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-encounter-status-entered-in-error\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-entered-in-error\">entered-in-error</a></td><td>Entered in Error</td><td>This instance should not have been part of this patient's medical record.</td></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-encounterstatus",
+      "version" : "1.0",
+      "name" : "MedComHospitalNotificationEncounterStatus",
+      "title" : "MedCom hospital notification encounter status Codes",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "ValueSet containing status codes for hospital notification encounter",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:258aae3f-e59f-4a28-9405-f2ac678ef269",
+        "timestamp" : "2021-01-22T10:17:31+01:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/encounter-status|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/encounter-status",
+          "code" : "in-progress",
+          "display" : "In Progress"
+        },
+        {
+          "system" : "http://hl7.org/fhir/encounter-status",
+          "code" : "onleave",
+          "display" : "On Leave"
+        },
+        {
+          "system" : "http://hl7.org/fhir/encounter-status",
+          "code" : "finished",
+          "display" : "Finished"
+        },
+        {
+          "system" : "http://hl7.org/fhir/encounter-status",
+          "code" : "entered-in-error",
+          "display" : "Entered in Error"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-messageActivities",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-hospitalNotification-messageActivities",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 18 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medcom-messaging-activityCodes.html\">MedCom Message Activity Codes v1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-medcom-messaging-activityCodes.html\"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-admit-emergency\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-admit-emergency\">admit-emergency</a></td><td>Start hospital stay-acute ambulant</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-revise-admit-emergency\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-revise-admit-emergency\">revise-admit-emergency</a></td><td>Update of Start hospital stay-acute ambulant</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-cancel-admit-emergency\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-cancel-admit-emergency\">cancel-admit-emergency</a></td><td>Cancellation of start hospital stay-acute ambulant</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-admit-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-admit-inpatient\">admit-inpatient</a></td><td>Start hospital stay-admission</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-revise-admit-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-revise-admit-inpatient\">revise-admit-inpatient</a></td><td>Update of start hospital stay-admission</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-cancel-admit-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-cancel-admit-inpatient\">cancel-admit-inpatient</a></td><td>Cancellation of start hospital stay-admission</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-start-leave-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-start-leave-inpatient\">start-leave-inpatient</a></td><td>Start leave</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-revise-start-leave-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-revise-start-leave-inpatient\">revise-start-leave-inpatient</a></td><td>Update of Start leave</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-cancel-start-leave-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-cancel-start-leave-inpatient\">cancel-start-leave-inpatient</a></td><td>Cancellation of Start leave</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-end-leave-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-end-leave-inpatient\">end-leave-inpatient</a></td><td>End leave</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-revise-end-leave-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-revise-end-leave-inpatient\">revise-end-leave-inpatient</a></td><td>Update of End leave</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-cancel-end-leave-inpatient\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-cancel-end-leave-inpatient\">cancel-end-leave-inpatient</a></td><td>Cancellation of End leave</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-discharge-emergency-home\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-discharge-emergency-home\">discharge-emergency-home</a></td><td>End hospital Stay - patient discharged to home/primary sector</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-discharge-inpatient-home\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-discharge-inpatient-home\">discharge-inpatient-home</a></td><td>End hospital Stay - patient discharged to home/primary sector</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-revise-discharge-emergency-home\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-revise-discharge-emergency-home\">revise-discharge-emergency-home</a></td><td>Update of End hospital Stay</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-revise-discharge-inpatient-home\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-revise-discharge-inpatient-home\">revise-discharge-inpatient-home</a></td><td>Update of End hospital Stay</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-cancel-discharge-emergency-home\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-cancel-discharge-emergency-home\">cancel-discharge-emergency-home</a></td><td>Cancellation of End hospital Stay</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-activityCodes-cancel-discharge-inpatient-home\"> </a><a href=\"CodeSystem-medcom-messaging-activityCodes.html#medcom-messaging-activityCodes-cancel-discharge-inpatient-home\">cancel-discharge-inpatient-home</a></td><td>Cancellation of End hospital Stay</td><td/></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-messageActivities",
+      "version" : "1.0",
+      "name" : "MedComHospitalNotificationMessageActivities",
+      "title" : "MedCom Hospital Notification Message Activity Codes",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "ValueSet containg activity codes for hospital notification messages",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f0d82885-12d6-40c3-b52b-03d9c1e90424",
+        "timestamp" : "2021-01-22T10:17:31+01:00",
+        "total" : 18,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes|1.0"
+        }],
+        "contains" : [{
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "admit-emergency",
+          "display" : "Start hospital stay-acute ambulant"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "revise-admit-emergency",
+          "display" : "Update of Start hospital stay-acute ambulant"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "cancel-admit-emergency",
+          "display" : "Cancellation of start hospital stay-acute ambulant"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "admit-inpatient",
+          "display" : "Start hospital stay-admission"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "revise-admit-inpatient",
+          "display" : "Update of start hospital stay-admission"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "cancel-admit-inpatient",
+          "display" : "Cancellation of start hospital stay-admission"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "start-leave-inpatient",
+          "display" : "Start leave"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "revise-start-leave-inpatient",
+          "display" : "Update of Start leave"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "cancel-start-leave-inpatient",
+          "display" : "Cancellation of Start leave"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "end-leave-inpatient",
+          "display" : "End leave"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "revise-end-leave-inpatient",
+          "display" : "Update of End leave"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "cancel-end-leave-inpatient",
+          "display" : "Cancellation of End leave"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "discharge-emergency-home",
+          "display" : "End hospital Stay - patient discharged to home/primary sector"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "discharge-inpatient-home",
+          "display" : "End hospital Stay - patient discharged to home/primary sector"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "revise-discharge-emergency-home",
+          "display" : "Update of End hospital Stay"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "revise-discharge-inpatient-home",
+          "display" : "Update of End hospital Stay"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "cancel-discharge-emergency-home",
+          "display" : "Cancellation of End hospital Stay"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+          "code" : "cancel-discharge-inpatient-home",
+          "display" : "Cancellation of End hospital Stay"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-messageTypes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-messaging-messageTypes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medcom-messaging-eventCodes.html\">MedCom Message Events v1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-medcom-messaging-eventCodes.html\"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-eventCodes-empty-message\"> </a><a href=\"CodeSystem-medcom-messaging-eventCodes.html#medcom-messaging-eventCodes-empty-message\">empty-message</a></td><td>Message with no content</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-eventCodes-care-communication-message\"> </a><a href=\"CodeSystem-medcom-messaging-eventCodes.html#medcom-messaging-eventCodes-care-communication-message\">care-communication-message</a></td><td>Care Communication Message</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-eventCodes-hospital-notification-message\"> </a><a href=\"CodeSystem-medcom-messaging-eventCodes.html#medcom-messaging-eventCodes-hospital-notification-message\">hospital-notification-message</a></td><td>Hospital Notification Message</td><td/></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-messageTypes",
+      "version" : "1.0",
+      "name" : "MedComMessagingMessageTypes",
+      "title" : "MedCom Messaging Message Types",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "All message types for MedCom messages",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5e9011c0-e505-4de0-b2c2-91e8c9dcaa5b",
+        "timestamp" : "2021-01-22T10:17:31+01:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes|1.0"
+        }],
+        "contains" : [{
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes",
+          "code" : "empty-message",
+          "display" : "Message with no content"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes",
+          "code" : "care-communication-message",
+          "display" : "Care Communication Message"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes",
+          "code" : "hospital-notification-message",
+          "display" : "Hospital Notification Message"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-vans-statisticalCode-combinations",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medcom-messaging-vans-statisticalCode-combinations",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 20 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medcom-messaging-statisticalCodes.html\">MedCom Messaging Statistical Codes v1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-medcom-messaging-statisticalCodes.html\"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS20-AcuteAmbulant\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS20.35AcuteAmbulant\">MCM:FDIS20#AcuteAmbulant</a></td><td>Start hospital stay-acute ambulant</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS20-AdmissionInpatient\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS20.35AdmissionInpatient\">MCM:FDIS20#AdmissionInpatient</a></td><td>Start hospital stay-admission</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS20-OnLeave\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS20.35OnLeave\">MCM:FDIS20#OnLeave</a></td><td>Start leave</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS20-EndOfLeave\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS20.35EndOfLeave\">MCM:FDIS20#EndOfLeave</a></td><td>end leave</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS20-EndHospitalStay\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS20.35EndHospitalStay\">MCM:FDIS20#EndHospitalStay</a></td><td>End hospital Stay - patient discharged to home/primary sector</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-outpatient\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35outpatient\">MCM:FDIS91#outpatient</a></td><td>Outpatient</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-decease\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35decease\">MCM:FDIS91#decease</a></td><td>Decease</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-carecoordination\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35carecoordination\">MCM:FDIS91#carecoordination</a></td><td>Care Coordination</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-assistive-devices\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35assistive-devices\">MCM:FDIS91#assistive-devices</a></td><td>Assistive Devices</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-medicine\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35medicine\">MCM:FDIS91#medicine</a></td><td>Medicine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-psychiatry-social-disability\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35psychiatry-social-disability\">MCM:FDIS91#psychiatry-social-disability</a></td><td>Psychiatry, Social, Disability</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-healthcare\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35healthcare\">MCM:FDIS91#healthcare</a></td><td>Healthcare</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-nursing\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35nursing\">MCM:FDIS91#nursing</a></td><td>Nursing</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-telemedicine\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35telemedicine\">MCM:FDIS91#telemedicine</a></td><td>Telemedicine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-training\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35training\">MCM:FDIS91#training</a></td><td>Training</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-discharge\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35discharge\">MCM:FDIS91#discharge</a></td><td>Discharge</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-regarding-referral\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35regarding-referral\">MCM:FDIS91#regarding-referral</a></td><td>Regarding Referral</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-assessment\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35assessment\">MCM:FDIS91#assessment</a></td><td>Assessment</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-examination-results\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35examination-results\">MCM:FDIS91#examination-results</a></td><td>Examination Results</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---medcomfhir.dk-fhir-core-1.0-CodeSystem-medcom-messaging-statisticalCodes-MCM-FDIS91-other\"> </a><a href=\"CodeSystem-medcom-messaging-statisticalCodes.html#medcom-messaging-statisticalCodes-MCM.58FDIS91.35other\">MCM:FDIS91#other</a></td><td>Other</td><td/></tr></table></div>"
+      },
+      "url" : "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-vans-statisticalCode-combinations",
+      "version" : "1.0",
+      "name" : "MedComMessagingVansStatisticalCodeCombinations",
+      "title" : "MedCom Messaging Vans StatisticalCode Combinations",
+      "status" : "active",
+      "date" : "2021-01-22T10:15:14+01:00",
+      "publisher" : "MedCom",
+      "contact" : [{
+        "name" : "MedCom",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.medcom.dk"
+        }]
+      }],
+      "description" : "MedCom Messaging Vans StatisticalCode Combinations",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5aa4ccc8-4582-4baf-86e2-21dc88b1e986",
+        "timestamp" : "2021-01-22T10:17:32+01:00",
+        "total" : 20,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes|1.0"
+        }],
+        "contains" : [{
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS20#AcuteAmbulant",
+          "display" : "Start hospital stay-acute ambulant"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS20#AdmissionInpatient",
+          "display" : "Start hospital stay-admission"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS20#OnLeave",
+          "display" : "Start leave"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS20#EndOfLeave",
+          "display" : "end leave"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS20#EndHospitalStay",
+          "display" : "End hospital Stay - patient discharged to home/primary sector"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#outpatient",
+          "display" : "Outpatient"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#decease",
+          "display" : "Decease"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#carecoordination",
+          "display" : "Care Coordination"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#assistive-devices",
+          "display" : "Assistive Devices"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#medicine",
+          "display" : "Medicine"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#psychiatry-social-disability",
+          "display" : "Psychiatry, Social, Disability"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#healthcare",
+          "display" : "Healthcare"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#nursing",
+          "display" : "Nursing"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#telemedicine",
+          "display" : "Telemedicine"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#training",
+          "display" : "Training"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#discharge",
+          "display" : "Discharge"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#regarding-referral",
+          "display" : "Regarding Referral"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#assessment",
+          "display" : "Assessment"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#examination-results",
+          "display" : "Examination Results"
+        },
+        {
+          "system" : "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes",
+          "code" : "MCM:FDIS91#other",
+          "display" : "Other"
+        }]
+      }
+    }
+  }]
+}

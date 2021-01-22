@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Provenance/HospitalNotificationAdmitProvenance> a fhir:Provenance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HospitalNotificationAdmitProvenance"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>target</b>: <a href=\"MessageHeader-HospitalNotificationAdmittedMessageHeader.html\">Generated Summary: <span title=\"{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes hospital-notification-message}\">Hospital Notification Message</span></a></p><p><b>occurred</b>: 15. okt. 2020 15.44.14</p><p><b>recorded</b>: 15. okt. 2020 15.45.15</p><p><b>activity</b>: <span title=\"Codes: {http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes admit-inpatient}\">Start hospital stay-admission</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href=\"Organization-MessageSender.html\">Generated Summary: id: 123456789012345, id: 1234567890123; name: Sender Organization</a></td></tr></table></div>"
+  ];
+  fhir:Provenance.target [
+     fhir:index 0;
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationAdmittedMessageHeader>;
+     fhir:Reference.reference [ fhir:value "MessageHeader/HospitalNotificationAdmittedMessageHeader" ]
+  ];
+  fhir:Provenance.occurredDateTime [ fhir:value "2020-10-15T13:44:14Z"^^xsd:dateTime];
+  fhir:Provenance.recorded [ fhir:value "2020-10-15T13:45:15Z"^^xsd:dateTime];
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes" ];
+       fhir:Coding.code [ fhir:value "admit-inpatient" ]
+     ]
+  ];
+  fhir:Provenance.agent [
+     fhir:index 0;
+     fhir:Provenance.agent.who [
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/MessageSender>;
+       fhir:Reference.reference [ fhir:value "Organization/MessageSender" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Provenance/HospitalNotificationAdmitProvenance.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

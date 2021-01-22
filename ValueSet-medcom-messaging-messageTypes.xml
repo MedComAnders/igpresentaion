@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medcom-messaging-messageTypes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-medcom-messaging-eventCodes.html"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes</code></a></li></ul></div>
+  </text>
+  <url value="http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-messageTypes"/>
+  <version value="1.0"/>
+  <name value="MedComMessagingMessageTypes"/>
+  <title value="MedCom Messaging Message Types"/>
+  <status value="active"/>
+  <date value="2021-01-22T10:15:14+01:00"/>
+  <publisher value="MedCom"/>
+  <contact>
+    <name value="MedCom"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.medcom.dk"/>
+    </telecom>
+  </contact>
+  <description value="All message types for MedCom messages"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes"/>
+    </include>
+  </compose>
+</ValueSet>

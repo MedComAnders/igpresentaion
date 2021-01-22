@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medcom-messaging-messageTypes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medcom-messaging-eventCodes.html\"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes</code></a></li></ul></div>"
+  },
+  "url": "http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-messageTypes",
+  "version": "1.0",
+  "name": "MedComMessagingMessageTypes",
+  "title": "MedCom Messaging Message Types",
+  "status": "active",
+  "date": "2021-01-22T10:15:14+01:00",
+  "publisher": "MedCom",
+  "contact": [
+    {
+      "name": "MedCom",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.medcom.dk"
+        }
+      ]
+    }
+  ],
+  "description": "All message types for MedCom messages",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DK",
+          "display": "Denmark"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes"
+      }
+    ]
+  }
+}

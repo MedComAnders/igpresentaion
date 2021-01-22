@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterFinishedWhenDeceased> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HospitalNotificationEncounterFinishedWhenDeceased"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 7b9f8497-3314-4535-8f86-20df7b5f4d55</p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span></p><p><b>subject</b>: <a href=\"Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931.html\">Generated Summary: id: 0101010141; Erik Clausen (OFFICIAL); Phone: 24533421; deceased</a></p><p><b>episodeOfCare</b>: <span></span></p><p><b>period</b>: 13. jan. 2021 14.44.14 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-PractitionerClinic.html\">Generated Summary: id: 378631000016009 (OFFICIAL); name: Test Practitioner clinic</a></p></div>"
+  ];
+  fhir:Encounter.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "7b9f8497-3314-4535-8f86-20df7b5f4d55" ]
+  ];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+     fhir:Coding.code [ fhir:value "IMP" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931>;
+     fhir:Reference.reference [ fhir:value "Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931" ]
+  ];
+  fhir:Encounter.episodeOfCare [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.esundhed.dk/Registre/Landspatientsregisteret" ];
+       fhir:Identifier.value [ fhir:value "200040a2-e05d-4af3-91e7-5febfa8ad0b3" ]
+     ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2021-01-13T13:44:14Z"^^xsd:dateTime ]
+  ];
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/PractitionerClinic>;
+     fhir:Reference.reference [ fhir:value "Organization/PractitionerClinic" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterFinishedWhenDeceased.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

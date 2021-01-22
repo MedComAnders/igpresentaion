@@ -1,0 +1,577 @@
+﻿MedComCore : Validation Results
+=========================================
+
+err = 47, warn = 2, info = 54
+IG Publisher Version: 1.1.57
+Generated Fri Jan 22 10:21:34 CET 2021. FHIR version 4.0.1 for dk.fhir.ig.medcom-core#1.0 (canonical = http://medcomfhir.dk/fhir/core/1.0)
+
+ Build Errors : 0 / 0 / 0
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample : 0 / 0 / 10
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-fatal-error : 0 / 1 / 12
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-ok : 0 / 1 / 12
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-CareCommunicationMessageExample : 0 / 0 / 27
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-CareCommunicationMessageForwardExample : 0 / 0 / 32
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-CareCommunicationMessageReplyExample : 0 / 0 / 32
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-EmptyMessage : 0 / 0 / 10
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageAdmitExample : 0 / 0 / 22
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample : 0 / 0 / 22
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageDischargeDeceasedExample : 0 / 0 / 22
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageDischargeExample : 0 / 0 / 25
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageEndLeaveExample : 0 / 0 / 28
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageStartLeaveExample : 0 / 0 / 25
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-careCommunication-categoryCodes : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-core-encounterActCodes : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-messaging-activityCodes : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-messaging-destinationUse : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-messaging-eventCodes : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-messaging-statisticalCodes : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Communication-CareCommunicationContent : 4 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-EncounterWithLPR3Identifier : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinished : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinishedWhenDeceased : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterInProgress : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterOnLeave : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-example : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ImplementationGuide-dk.fhir.ig.medcom-core : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-fatal-error : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-ok : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-CareCommunicationMessageHeader : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmittedMessageHeader : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedMessageHeader : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationEndLeaveMessageHeader : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationOnLeaveMessageHeader : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-MessageHeaderExample : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\OperationOutcome-OperationOutcome-error : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\OperationOutcome-OperationOutcome-ok : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Organization-BurnCenter : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Organization-MessageReceiver : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Organization-MessageSender : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Organization-PractitionerClinic : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931 : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-5b72c625-0570-4111-b272-f0351344f8b6 : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-733cef33-3626-422b-955d-d506aaa65fe1 : 1 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationAdmitProvenance : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationEndLeaveProvenance : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveProvenance : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-NewCareCommunicationProvenance : 2 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-careCommunication-communication : 0 / 2 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-careCommunication-message : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-careCommunication-messageHeader : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-author-extension : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-datetime-extension : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-eanIdentifier : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-encounter : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-lpr3Encounter : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-organization : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-patient : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-hospitalNotification-encounter : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-hospitalNotification-message : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-hospitalNotification-messageHeader : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-acknowledgement : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-acknowledgementHeader : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-destinationUseExtension : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-message : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-messageHeader : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-organization : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-provenance : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-reportOfAdmissionExtension : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-careCommunication-categories : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-careCommunication-messagingActivities : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-careCommunication-requestPriority : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-core-attachmentMimeTypes : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-core-encounterClass : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-hospitalNotification-encounterClass : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-hospitalNotification-encounterstatus : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-hospitalNotification-messageActivities : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-messaging-messageTypes : 0 / 0 / 1
+ C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-messaging-vans-statisticalCode-combinations : 0 / 0 / 1
+</table>
+== n/a ==
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample.json ==
+INFORMATION: Bundle/AcknowledgementExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[1]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader - listed in meta
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/AcknowledgementExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-fatal-error.json ==
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[1]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader - listed in meta
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[3].resource.ofType(OperationOutcome): Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationOutcome
+WARNING: Bundle/AcknowledgementExample-fatal-error: Bundle.entry[4]: Entry 'MedComMessagingAcknowledgementHeader/OperationOutcome-error' isn't reachable by traversing from first Bundle entry
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-ok.json ==
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[1]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader - listed in meta
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/AcknowledgementExample-ok: Bundle.entry[3].resource.ofType(OperationOutcome): Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationOutcome
+WARNING: Bundle/AcknowledgementExample-ok: Bundle.entry[4]: Entry 'MedComMessagingAcknowledgementHeader/OperationOutcome-error' isn't reachable by traversing from first Bundle entry
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-CareCommunicationMessageExample.json ==
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[6]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[7]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[3].resource.ofType(Communication): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Communication
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[3].resource.ofType(Communication): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[4].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[4].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[5].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[6].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[6].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[7].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[7].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[8].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[8].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/CareCommunicationMessageExample: Bundle.entry[8].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-CareCommunicationMessageForwardExample.json ==
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[6]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[7]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[8]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[3].resource.ofType(Communication): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Communication
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[3].resource.ofType(Communication): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[4].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[4].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[5].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[6].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[7].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[7].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[8].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[8].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[9].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[9].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[9].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[10].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[10].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/CareCommunicationMessageForwardExample: Bundle.entry[10].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-CareCommunicationMessageReplyExample.json ==
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[6]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[7]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[8]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[3].resource.ofType(Communication): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Communication
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[3].resource.ofType(Communication): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[4].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[4].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[5].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[6].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[7].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[7].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[8].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[8].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[9].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[9].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[9].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[10].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[10].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/CareCommunicationMessageReplyExample: Bundle.entry[10].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-EmptyMessage.json ==
+INFORMATION: Bundle/EmptyMessage: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-message
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[1]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-message
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-message
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader - listed in meta
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/EmptyMessage: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageAdmitExample.json ==
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmitExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample.json ==
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageDischargeDeceasedExample.json ==
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageDischargeExample.json ==
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageDischargeExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageEndLeaveExample.json ==
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[8].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[8].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageEndLeaveExample: Bundle.entry[8].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-MedComHospitalNotificationMessageStartLeaveExample.json ==
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[2]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[3]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[4]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[5]: This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[0].resource.ofType(MessageHeader): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[2].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[3].resource.ofType(Encounter): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[5].resource.ofType(Organization): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[6].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/MedComHospitalNotificationMessageStartLeaveExample: Bundle.entry[7].resource.ofType(Provenance): Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance - listed in meta
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-careCommunication-categoryCodes.json ==
+INFORMATION: CodeSystem/medcom-careCommunication-categoryCodes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-core-encounterActCodes.json ==
+INFORMATION: CodeSystem/medcom-core-encounterActCodes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-messaging-activityCodes.json ==
+INFORMATION: CodeSystem/medcom-messaging-activityCodes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-messaging-destinationUse.json ==
+INFORMATION: CodeSystem/medcom-messaging-destinationUse: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-messaging-eventCodes.json ==
+INFORMATION: CodeSystem/medcom-messaging-eventCodes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\CodeSystem-medcom-messaging-statisticalCodes.json ==
+INFORMATION: CodeSystem/medcom-messaging-statisticalCodes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Communication-CareCommunicationContent.json ==
+INFORMATION: Communication/CareCommunicationContent: Communication: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication
+ERROR: Communication/CareCommunicationContent: Communication.subject: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Communication/CareCommunicationContent: Communication.encounter: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Communication/CareCommunicationContent: Communication.payload[0].extension[1].value.ofType(Reference): Unable to resolve resource 'Practitioner/MichaelBurns'
+ERROR: Communication/CareCommunicationContent: Communication.payload[0].extension[1].value.ofType(Reference): Bundled or contained reference not found within the bundle/resource Practitioner/MichaelBurns
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-EncounterWithLPR3Identifier.json ==
+INFORMATION: Encounter/EncounterWithLPR3Identifier: Encounter: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter
+ERROR: Encounter/EncounterWithLPR3Identifier: Encounter.subject: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased.json ==
+INFORMATION: Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased: Encounter: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter
+ERROR: Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased: Encounter.subject: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased: Encounter.serviceProvider: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinished.json ==
+INFORMATION: Encounter/HospitalNotificationEncounterFinished: Encounter: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter
+ERROR: Encounter/HospitalNotificationEncounterFinished: Encounter.subject: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Encounter/HospitalNotificationEncounterFinished: Encounter.serviceProvider: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinishedWhenDeceased.json ==
+INFORMATION: Encounter/HospitalNotificationEncounterFinishedWhenDeceased: Encounter: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter
+ERROR: Encounter/HospitalNotificationEncounterFinishedWhenDeceased: Encounter.subject: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Encounter/HospitalNotificationEncounterFinishedWhenDeceased: Encounter.serviceProvider: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterInProgress.json ==
+INFORMATION: Encounter/HospitalNotificationEncounterInProgress: Encounter: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter
+ERROR: Encounter/HospitalNotificationEncounterInProgress: Encounter.subject: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Encounter/HospitalNotificationEncounterInProgress: Encounter.serviceProvider: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterOnLeave.json ==
+INFORMATION: Encounter/HospitalNotificationEncounterOnLeave: Encounter: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter
+ERROR: Encounter/HospitalNotificationEncounterOnLeave: Encounter.subject: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Encounter/HospitalNotificationEncounterOnLeave: Encounter.serviceProvider: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-example.json ==
+INFORMATION: Encounter/example: Encounter: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-encounter
+ERROR: Encounter/example: Encounter.subject: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ImplementationGuide-dk.fhir.ig.medcom-core.json ==
+INFORMATION: ImplementationGuide/dk.fhir.ig.medcom-core: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample.json ==
+INFORMATION: MessageHeader/AcknowledgementHeaderExample: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader
+ERROR: MessageHeader/AcknowledgementHeaderExample: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-fatal-error.json ==
+INFORMATION: MessageHeader/AcknowledgementHeaderExample-fatal-error: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader
+ERROR: MessageHeader/AcknowledgementHeaderExample-fatal-error: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-ok.json ==
+INFORMATION: MessageHeader/AcknowledgementHeaderExample-ok: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader
+ERROR: MessageHeader/AcknowledgementHeaderExample-ok: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-CareCommunicationMessageHeader.json ==
+INFORMATION: MessageHeader/CareCommunicationMessageHeader: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader
+ERROR: MessageHeader/CareCommunicationMessageHeader: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: MessageHeader/CareCommunicationMessageHeader: MessageHeader.focus[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader.json ==
+INFORMATION: MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+ERROR: MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader: MessageHeader.focus[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmittedMessageHeader.json ==
+INFORMATION: MessageHeader/HospitalNotificationAdmittedMessageHeader: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+ERROR: MessageHeader/HospitalNotificationAdmittedMessageHeader: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: MessageHeader/HospitalNotificationAdmittedMessageHeader: MessageHeader.focus[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader.json ==
+INFORMATION: MessageHeader/HospitalNotificationDischargedDeceasedMessageHeader: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+ERROR: MessageHeader/HospitalNotificationDischargedDeceasedMessageHeader: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: MessageHeader/HospitalNotificationDischargedDeceasedMessageHeader: MessageHeader.focus[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedMessageHeader.json ==
+INFORMATION: MessageHeader/HospitalNotificationDischargedMessageHeader: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+ERROR: MessageHeader/HospitalNotificationDischargedMessageHeader: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: MessageHeader/HospitalNotificationDischargedMessageHeader: MessageHeader.focus[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationEndLeaveMessageHeader.json ==
+INFORMATION: MessageHeader/HospitalNotificationEndLeaveMessageHeader: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+ERROR: MessageHeader/HospitalNotificationEndLeaveMessageHeader: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: MessageHeader/HospitalNotificationEndLeaveMessageHeader: MessageHeader.focus[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationOnLeaveMessageHeader.json ==
+INFORMATION: MessageHeader/HospitalNotificationOnLeaveMessageHeader: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader
+ERROR: MessageHeader/HospitalNotificationOnLeaveMessageHeader: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: MessageHeader/HospitalNotificationOnLeaveMessageHeader: MessageHeader.focus[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-MessageHeaderExample.json ==
+INFORMATION: MessageHeader/MessageHeaderExample: MessageHeader: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader
+ERROR: MessageHeader/MessageHeaderExample: MessageHeader.destination[0].receiver: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\OperationOutcome-OperationOutcome-error.json ==
+INFORMATION: OperationOutcome/OperationOutcome-error: OperationOutcome: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationOutcome
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\OperationOutcome-OperationOutcome-ok.json ==
+INFORMATION: OperationOutcome/OperationOutcome-ok: OperationOutcome: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationOutcome
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Organization-BurnCenter.json ==
+INFORMATION: Organization/BurnCenter: Organization: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Organization-MessageReceiver.json ==
+INFORMATION: Organization/MessageReceiver: Organization: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Organization-MessageSender.json ==
+INFORMATION: Organization/MessageSender: Organization: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Organization-PractitionerClinic.json ==
+INFORMATION: Organization/PractitionerClinic: Organization: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931.json ==
+INFORMATION: Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931: Patient: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+ERROR: Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931: Patient.managingOrganization: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-5b72c625-0570-4111-b272-f0351344f8b6.json ==
+INFORMATION: Patient/5b72c625-0570-4111-b272-f0351344f8b6: Patient: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+ERROR: Patient/5b72c625-0570-4111-b272-f0351344f8b6: Patient.managingOrganization: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-733cef33-3626-422b-955d-d506aaa65fe1.json ==
+INFORMATION: Patient/733cef33-3626-422b-955d-d506aaa65fe1: Patient: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient
+ERROR: Patient/733cef33-3626-422b-955d-d506aaa65fe1: Patient.managingOrganization: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationAdmitProvenance.json ==
+INFORMATION: Provenance/HospitalNotificationAdmitProvenance: Provenance: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+ERROR: Provenance/HospitalNotificationAdmitProvenance: Provenance.target[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Provenance/HospitalNotificationAdmitProvenance: Provenance.agent[0].who: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationEndLeaveProvenance.json ==
+INFORMATION: Provenance/HospitalNotificationEndLeaveProvenance: Provenance: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+ERROR: Provenance/HospitalNotificationEndLeaveProvenance: Provenance.target[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Provenance/HospitalNotificationEndLeaveProvenance: Provenance.agent[0].who: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance.json ==
+INFORMATION: Provenance/HospitalNotificationStartLeaveForEndLeaveProvenance: Provenance: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+ERROR: Provenance/HospitalNotificationStartLeaveForEndLeaveProvenance: Provenance.target[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Provenance/HospitalNotificationStartLeaveForEndLeaveProvenance: Provenance.agent[0].who: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveProvenance.json ==
+INFORMATION: Provenance/HospitalNotificationStartLeaveProvenance: Provenance: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+ERROR: Provenance/HospitalNotificationStartLeaveProvenance: Provenance.target[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Provenance/HospitalNotificationStartLeaveProvenance: Provenance.agent[0].who: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-NewCareCommunicationProvenance.json ==
+INFORMATION: Provenance/NewCareCommunicationProvenance: Provenance: Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance
+ERROR: Provenance/NewCareCommunicationProvenance: Provenance.target[0]: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+ERROR: Provenance/NewCareCommunicationProvenance: Provenance.agent[0].who: Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-careCommunication-communication.json ==
+INFORMATION: StructureDefinition/medcom-careCommunication-communication: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-careCommunication-message.json ==
+INFORMATION: StructureDefinition/medcom-careCommunication-message: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-careCommunication-messageHeader.json ==
+INFORMATION: StructureDefinition/medcom-careCommunication-messageHeader: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-author-extension.json ==
+INFORMATION: StructureDefinition/medcom-core-author-extension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-datetime-extension.json ==
+INFORMATION: StructureDefinition/medcom-core-datetime-extension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-eanIdentifier.json ==
+INFORMATION: StructureDefinition/medcom-core-eanIdentifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-encounter.json ==
+INFORMATION: StructureDefinition/medcom-core-encounter: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-lpr3Encounter.json ==
+INFORMATION: StructureDefinition/medcom-core-lpr3Encounter: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-organization.json ==
+INFORMATION: StructureDefinition/medcom-core-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-core-patient.json ==
+INFORMATION: StructureDefinition/medcom-core-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-hospitalNotification-encounter.json ==
+INFORMATION: StructureDefinition/medcom-hospitalNotification-encounter: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-hospitalNotification-message.json ==
+INFORMATION: StructureDefinition/medcom-hospitalNotification-message: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-hospitalNotification-messageHeader.json ==
+INFORMATION: StructureDefinition/medcom-hospitalNotification-messageHeader: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-acknowledgement.json ==
+INFORMATION: StructureDefinition/medcom-messaging-acknowledgement: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-acknowledgementHeader.json ==
+INFORMATION: StructureDefinition/medcom-messaging-acknowledgementHeader: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-destinationUseExtension.json ==
+INFORMATION: StructureDefinition/medcom-messaging-destinationUseExtension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-message.json ==
+INFORMATION: StructureDefinition/medcom-messaging-message: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-messageHeader.json ==
+INFORMATION: StructureDefinition/medcom-messaging-messageHeader: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-organization.json ==
+INFORMATION: StructureDefinition/medcom-messaging-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-provenance.json ==
+INFORMATION: StructureDefinition/medcom-messaging-provenance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\StructureDefinition-medcom-messaging-reportOfAdmissionExtension.json ==
+INFORMATION: StructureDefinition/medcom-messaging-reportOfAdmissionExtension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-careCommunication-categories.json ==
+INFORMATION: ValueSet/medcom-careCommunication-categories: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-careCommunication-messagingActivities.json ==
+INFORMATION: ValueSet/medcom-careCommunication-messagingActivities: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-careCommunication-requestPriority.json ==
+INFORMATION: ValueSet/medcom-careCommunication-requestPriority: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-core-attachmentMimeTypes.json ==
+INFORMATION: ValueSet/medcom-core-attachmentMimeTypes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-core-encounterClass.json ==
+INFORMATION: ValueSet/medcom-core-encounterClass: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-hospitalNotification-encounterClass.json ==
+INFORMATION: ValueSet/medcom-hospitalNotification-encounterClass: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-hospitalNotification-encounterstatus.json ==
+INFORMATION: ValueSet/medcom-hospitalNotification-encounterstatus: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-hospitalNotification-messageActivities.json ==
+INFORMATION: ValueSet/medcom-hospitalNotification-messageActivities: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-messaging-messageTypes.json ==
+INFORMATION: ValueSet/medcom-messaging-messageTypes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\ValueSet-medcom-messaging-vans-statisticalCode-combinations.json ==
+INFORMATION: ValueSet/medcom-messaging-vans-statisticalCode-combinations: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

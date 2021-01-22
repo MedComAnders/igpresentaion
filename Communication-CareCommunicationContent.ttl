@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Communication/CareCommunicationContent> a fhir:Communication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CareCommunicationContent"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: unknown</p><p><b>category</b>: <span title=\"Codes: {http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes carecoordination}\">Care Coordination</span></p><p><b>subject</b>: <a href=\"Patient-733cef33-3626-422b-955d-d506aaa65fe1.html\">Generated Summary: id: 0102030405; Eric Flame (OFFICIAL); Phone: 12345678</a></p><p><b>encounter</b>: <a href=\"Encounter-EncounterWithLPR3Identifier.html\">Generated Summary: status: unknown; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span></a></p><p><b>sent</b>: 28. sep. 2020 14.34.56</p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>, </td><td>The burns are quite severe</td></tr></table></div>"
+  ];
+  fhir:Communication.status [ fhir:value "unknown"];
+  fhir:Communication.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes" ];
+       fhir:Coding.code [ fhir:value "carecoordination" ]
+     ]
+  ];
+  fhir:Communication.subject [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Patient/733cef33-3626-422b-955d-d506aaa65fe1>;
+     fhir:Reference.reference [ fhir:value "Patient/733cef33-3626-422b-955d-d506aaa65fe1" ]
+  ];
+  fhir:Communication.encounter [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/EncounterWithLPR3Identifier>;
+     fhir:Reference.reference [ fhir:value "Encounter/EncounterWithLPR3Identifier" ]
+  ];
+  fhir:Communication.sent [ fhir:value "2020-09-28T12:34:56Z"^^xsd:dateTime];
+  fhir:Communication.payload [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-datetime-extension" ];
+       fhir:Extension.valueDateTime [ fhir:value "2020-09-28"^^xsd:date ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-author-extension" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Practitioner/MichaelBurns>;
+         fhir:Reference.reference [ fhir:value "Practitioner/MichaelBurns" ]
+       ]
+     ];
+     fhir:Communication.payload.contentString [ fhir:value "The burns are quite severe" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Communication/CareCommunicationContent.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

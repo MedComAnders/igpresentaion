@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="HospitalNotificationEndLeaveProvenance"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>target</b>: <a href="MessageHeader-HospitalNotificationEndLeaveMessageHeader.html">Generated Summary: <span title="{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes hospital-notification-message}">Hospital Notification Message</span></a></p><p><b>occurred</b>: 25. okt. 2020 10.12.34</p><p><b>recorded</b>: 25. okt. 2020 10.12.34</p><p><b>activity</b>: <span title="Codes: {http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes end-leave-inpatient}">End leave</span></p><h3>Agents</h3><table class="grid"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href="Organization-MessageSender.html">Generated Summary: id: 123456789012345, id: 1234567890123; name: Sender Organization</a></td></tr></table><h3>Entities</h3><table class="grid"><tr><td>-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>*</td><td>derivation</td><td><a href="MessageHeader-HospitalNotificationOnLeaveMessageHeader.html">Generated Summary: <span title="{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes hospital-notification-message}">Hospital Notification Message</span></a></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="MessageHeader/HospitalNotificationEndLeaveMessageHeader"/>
+  </target>
+  <occurredDateTime value="2020-10-25T09:12:34Z"/>
+  <recorded value="2020-10-25T09:12:34Z"/>
+  <activity>
+    <coding>
+      <system value="http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes"/>
+      <code value="end-leave-inpatient"/>
+    </coding>
+  </activity>
+  <agent>
+    <who>
+      <reference value="Organization/MessageSender"/>
+    </who>
+  </agent>
+  <entity>
+    <role value="derivation"/>
+    <what>
+      <reference value="MessageHeader/HospitalNotificationOnLeaveMessageHeader"/>
+    </what>
+  </entity>
+</Provenance>

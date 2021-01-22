@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterInProgress> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HospitalNotificationEncounterInProgress"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1234567890</p><p><b>status</b>: in-progress</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span></p><p><b>subject</b>: <a href=\"Patient-733cef33-3626-422b-955d-d506aaa65fe1.html\">Generated Summary: id: 0102030405; Eric Flame (OFFICIAL); Phone: 12345678</a></p><p><b>episodeOfCare</b>: <span></span></p><p><b>period</b>: 15. okt. 2020 15.44.14 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-BurnCenter.html\">Generated Summary: id: 123456789012345 (OFFICIAL); name: Aros Burn Center</a></p></div>"
+  ];
+  fhir:Encounter.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "1234567890" ]
+  ];
+  fhir:Encounter.status [ fhir:value "in-progress"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+     fhir:Coding.code [ fhir:value "IMP" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Patient/733cef33-3626-422b-955d-d506aaa65fe1>;
+     fhir:Reference.reference [ fhir:value "Patient/733cef33-3626-422b-955d-d506aaa65fe1" ]
+  ];
+  fhir:Encounter.episodeOfCare [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.esundhed.dk/Registre/Landspatientsregisteret" ];
+       fhir:Identifier.value [ fhir:value "87654321-1234-1234-1234-123456789012" ]
+     ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2020-10-15T13:44:14Z"^^xsd:dateTime ]
+  ];
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/BurnCenter>;
+     fhir:Reference.reference [ fhir:value "Organization/BurnCenter" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterInProgress.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

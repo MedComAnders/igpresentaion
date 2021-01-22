@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationOutcome xmlns="http://hl7.org/fhir">
+  <id value="OperationOutcome-error"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Issues</h3><table class="grid"><tr><td>-</td><td><b>Severity</b></td><td><b>Code</b></td><td><b>Diagnostics</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>error</td><td>structure</td><td>Error parsing resource XML</td><td>Bundle.meta</td></tr></table></div>
+  </text>
+  <issue>
+    <severity value="error"/>
+    <code value="structure"/>
+    <diagnostics value="Error parsing resource XML"/>
+    <expression value="Bundle.meta"/>
+  </issue>
+</OperationOutcome>

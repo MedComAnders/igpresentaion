@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medcom-messaging-eventCodes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">empty-message<a name=\"medcom-messaging-eventCodes-empty-message\"> </a></td><td>Message with no content</td></tr><tr><td style=\"white-space:nowrap\">care-communication-message<a name=\"medcom-messaging-eventCodes-care-communication-message\"> </a></td><td>Care Communication Message</td></tr><tr><td style=\"white-space:nowrap\">hospital-notification-message<a name=\"medcom-messaging-eventCodes-hospital-notification-message\"> </a></td><td>Hospital Notification Message</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes"];
+  fhir:CodeSystem.version [ fhir:value "1.0"];
+  fhir:CodeSystem.name [ fhir:value "MedComMessageEventCodes"];
+  fhir:CodeSystem.title [ fhir:value "MedCom Message Events"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-01-22T10:15:14+01:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "MedCom"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MedCom" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.medcom.dk" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Message events for MedCom messages"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DK" ];
+       fhir:Coding.display [ fhir:value "Denmark" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "empty-message" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Message with no content" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "care-communication-message" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Care Communication Message" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "hospital-notification-message" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospital Notification Message" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

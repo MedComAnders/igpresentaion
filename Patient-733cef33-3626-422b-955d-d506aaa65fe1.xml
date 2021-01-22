@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="733cef33-3626-422b-955d-d506aaa65fe1"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0102030405</p><p><b>name</b>: Eric Flame (OFFICIAL)</p><p><b>telecom</b>: ph: 12345678</p><p><b>address</b>: Flammesvinget 1 Aarhus 8000 C </p><p><b>managingOrganization</b>: <a href="Organization-BurnCenter.html">Generated Summary: id: 123456789012345 (OFFICIAL); name: Aros Burn Center</a></p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="0102030405"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Flame"/>
+    <given value="Eric"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="12345678"/>
+  </telecom>
+  <address>
+    <line value="Flammesvinget 1"/>
+    <city value="Aarhus"/>
+    <postalCode value="8000 C"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/BurnCenter"/>
+  </managingOrganization>
+</Patient>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medcom-core-encounterClass"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a> where concept  is-a  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-_ActEncounterCode">_ActEncounterCode</a></li><li>Include all codes defined in <a href="CodeSystem-medcom-core-encounterActCodes.html"><code>http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes</code></a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-ActCode.html#v3-ActCode-_ActEncounterCode">_ActEncounterCode</a></td><td>ActEncounterCode</td><td>Domain provides codes that qualify the ActEncounterClass (ENC)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-encounterClass"/>
+  <version value="1.0"/>
+  <name value="MedComCoreEncounterClass"/>
+  <title value="MedCom Core Encounter Class Codes"/>
+  <status value="active"/>
+  <date value="2021-01-22T10:15:14+01:00"/>
+  <publisher value="MedCom"/>
+  <contact>
+    <name value="MedCom"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.medcom.dk"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet containg class codes for MedCom core encounter"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="_ActEncounterCode"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes"/>
+    </include>
+    <exclude>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <concept>
+        <code value="_ActEncounterCode"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

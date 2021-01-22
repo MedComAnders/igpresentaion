@@ -1,0 +1,850 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 47, warn = 2, info = 54 -->
+<head>
+  <title>MedComCore : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for MedComCore</h1>
+ <p>Generated Fri Jan 22 10:21:31 CET 2021, FHIR version 4.0.1 for dk.fhir.ig.medcom-core#1.0 (canonical = <a href="http://medcomfhir.dk/fhir/core/1.0">http://medcomfhir.dk/fhir/core/1.0</a> (<a href="http://medcomfhir.dk/fhir/core/1.0/history.html">history</a>)). See <a href="c:\git\dk-medcom\dk-medcom\output\qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.57</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = dk.fhir.ig.medcom-core, Canonical = http://medcomfhir.dk/fhir/core/1.0</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>1.0: <span stlye="color: marron; font-weight: bold">Version does not conform to semver rules</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">1 Suppressed Issue</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\GIT\dk-medcom\dk-medcom\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> dk.fhir.ig.medcom-core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://medcomfhir.dk/fhir/core/1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\GIT\dk-medcom\dk-medcom\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> dk.fhir.ig.dk-core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.9.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.dk/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://build.fhir.org/ig/hl7dk/dk-core/</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Matched to latest patch release</td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://medcomfhir.dk/fhir/core/1.0 (Problem #1 with package-list.json at http://medcomfhir.dk/fhir/core/1.0: http://medcomfhir.dk/fhir/core/1.0/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 47, warn = 2, info = 54</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Bundle-AcknowledgementExample-fatal-error"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-fatal-error</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>12</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Bundle-AcknowledgementExample-ok"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-ok</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>12</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Communication-CareCommunicationContent"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Communication-CareCommunicationContent</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-EncounterWithLPR3Identifier"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-EncounterWithLPR3Identifier</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterFinished"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinished</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterFinishedWhenDeceased"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinishedWhenDeceased</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterInProgress"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterInProgress</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterOnLeave"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterOnLeave</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-example"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-example</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-AcknowledgementHeaderExample"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-AcknowledgementHeaderExample-fatal-error"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-fatal-error</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-AcknowledgementHeaderExample-ok"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-ok</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-CareCommunicationMessageHeader"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-CareCommunicationMessageHeader</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationAdmittedMessageHeader"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmittedMessageHeader</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationDischargedMessageHeader"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedMessageHeader</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationEndLeaveMessageHeader"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationEndLeaveMessageHeader</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationOnLeaveMessageHeader"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationOnLeaveMessageHeader</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-MessageHeaderExample"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-MessageHeaderExample</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Patient-5b72c625-0570-4111-b272-f0351344f8b6"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-5b72c625-0570-4111-b272-f0351344f8b6</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Patient-733cef33-3626-422b-955d-d506aaa65fe1"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-733cef33-3626-422b-955d-d506aaa65fe1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-HospitalNotificationAdmitProvenance"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationAdmitProvenance</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-HospitalNotificationEndLeaveProvenance"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationEndLeaveProvenance</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-HospitalNotificationStartLeaveProvenance"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveProvenance</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-NewCareCommunicationProvenance"><b>C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-NewCareCommunicationProvenance</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Bundle-AcknowledgementExample-fatal-error"> </a>
+<h2><a href="Bundle-AcknowledgementExample-fatal-error.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-fatal-error.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/AcknowledgementExample-fatal-error: Bundle.entry[1] (l58/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement</b> <span id="sl1" class="flip" onclick="flip('l1')">Show Reasoning</span><div id="l1" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement<ul><li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader')</li>, <li>Bundle.entry[1]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'MessageHeader', but found type 'Organization'</li></ul></li>, <li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance')</li>, <li>Bundle.entry[1]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'Provenance', but found type 'Organization'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/AcknowledgementExample-fatal-error: Bundle.entry[2] (l81/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement</b> <span id="sl2" class="flip" onclick="flip('l2')">Show Reasoning</span><div id="l2" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement<ul><li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader')</li>, <li>Bundle.entry[2]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'MessageHeader', but found type 'Organization'</li></ul></li>, <li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance')</li>, <li>Bundle.entry[2]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'Provenance', but found type 'Organization'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/AcknowledgementExample-fatal-error: Bundle.entry[3] (l104/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement</b> <span id="sl3" class="flip" onclick="flip('l3')">Show Reasoning</span><div id="l3" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement<ul><li>Bundle.entry[3]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader')</li>, <li>Bundle.entry[3]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'MessageHeader', but found type 'OperationOutcome'</li></ul></li>, <li>Bundle.entry[3]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance')</li>, <li>Bundle.entry[3]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'Provenance', but found type 'OperationOutcome'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[0].resource.ofType(MessageHeader) (l49/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[0].resource.ofType(MessageHeader) (l49/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[0].resource.ofType(MessageHeader) (l49/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[1].resource.ofType(Organization) (l63/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[1].resource.ofType(Organization) (l63/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[2].resource.ofType(Organization) (l86/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[2].resource.ofType(Organization) (l86/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[3].resource.ofType(OperationOutcome) (l107/c44)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationOutcome</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/AcknowledgementExample-fatal-error: Bundle.entry[4] (l104/c6)</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Entry_Orphan"><b>Entry 'MedComMessagingAcknowledgementHeader/OperationOutcome-error' isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Bundle-AcknowledgementExample-ok"> </a>
+<h2><a href="Bundle-AcknowledgementExample-ok.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-ok.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/AcknowledgementExample-ok: Bundle.entry[1] (l58/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement</b> <span id="sl14" class="flip" onclick="flip('l14')">Show Reasoning</span><div id="l14" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement<ul><li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader')</li>, <li>Bundle.entry[1]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'MessageHeader', but found type 'Organization'</li></ul></li>, <li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance')</li>, <li>Bundle.entry[1]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'Provenance', but found type 'Organization'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/AcknowledgementExample-ok: Bundle.entry[2] (l81/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement</b> <span id="sl15" class="flip" onclick="flip('l15')">Show Reasoning</span><div id="l15" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement<ul><li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader')</li>, <li>Bundle.entry[2]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'MessageHeader', but found type 'Organization'</li></ul></li>, <li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance')</li>, <li>Bundle.entry[2]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'Provenance', but found type 'Organization'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/AcknowledgementExample-ok: Bundle.entry[3] (l104/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement</b> <span id="sl16" class="flip" onclick="flip('l16')">Show Reasoning</span><div id="l16" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement<ul><li>Bundle.entry[3]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader')</li>, <li>Bundle.entry[3]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'MessageHeader', but found type 'OperationOutcome'</li></ul></li>, <li>Bundle.entry[3]: discriminator = true and resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance')</li>, <li>Bundle.entry[3]: Profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance does not match for Bundle because of the following profile issues: <ul><li>resource: Specified profile type was 'Provenance', but found type 'OperationOutcome'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[0].resource.ofType(MessageHeader) (l49/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[0].resource.ofType(MessageHeader) (l49/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[0].resource.ofType(MessageHeader) (l49/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[1].resource.ofType(Organization) (l63/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[1].resource.ofType(Organization) (l63/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[2].resource.ofType(Organization) (l86/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[2].resource.ofType(Organization) (l86/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[3].resource.ofType(OperationOutcome) (l107/c44)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationOutcome</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/AcknowledgementExample-ok: Bundle.entry[4] (l104/c6)</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Entry_Orphan"><b>Entry 'MedComMessagingAcknowledgementHeader/OperationOutcome-error' isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Communication-CareCommunicationContent"> </a>
+<h2><a href="Communication-CareCommunicationContent.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Communication-CareCommunicationContent.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Communication/CareCommunicationContent: Communication (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Communication/CareCommunicationContent: Communication.subject (l39/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Communication/CareCommunicationContent: Communication.encounter (l42/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Communication/CareCommunicationContent: Communication.payload[0].extension[1].value.ofType(Reference) (l20/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/MichaelBurns'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Communication/CareCommunicationContent: Communication.payload[0].extension[1].value.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_NotFound_Bundle"><b>Bundled or contained reference not found within the bundle/resource Practitioner/MichaelBurns</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-EncounterWithLPR3Identifier"> </a>
+<h2><a href="Encounter-EncounterWithLPR3Identifier.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-EncounterWithLPR3Identifier.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Encounter/EncounterWithLPR3Identifier: Encounter (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/EncounterWithLPR3Identifier: Encounter.subject (l24/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased"> </a>
+<h2><a href="Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased: Encounter (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased: Encounter.subject (l29/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased: Encounter.serviceProvider (l35/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterFinished"> </a>
+<h2><a href="Encounter-HospitalNotificationEncounterFinished.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinished.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Encounter/HospitalNotificationEncounterFinished: Encounter (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterFinished: Encounter.subject (l29/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterFinished: Encounter.serviceProvider (l35/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterFinishedWhenDeceased"> </a>
+<h2><a href="Encounter-HospitalNotificationEncounterFinishedWhenDeceased.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinishedWhenDeceased.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Encounter/HospitalNotificationEncounterFinishedWhenDeceased: Encounter (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterFinishedWhenDeceased: Encounter.subject (l29/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterFinishedWhenDeceased: Encounter.serviceProvider (l35/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterInProgress"> </a>
+<h2><a href="Encounter-HospitalNotificationEncounterInProgress.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterInProgress.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Encounter/HospitalNotificationEncounterInProgress: Encounter (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterInProgress: Encounter.subject (l29/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterInProgress: Encounter.serviceProvider (l35/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-HospitalNotificationEncounterOnLeave"> </a>
+<h2><a href="Encounter-HospitalNotificationEncounterOnLeave.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterOnLeave.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Encounter/HospitalNotificationEncounterOnLeave: Encounter (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterOnLeave: Encounter.subject (l29/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/HospitalNotificationEncounterOnLeave: Encounter.serviceProvider (l35/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Encounter-example"> </a>
+<h2><a href="Encounter-example.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-example.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Encounter/example: Encounter (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-encounter</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter/example: Encounter.subject (l16/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-AcknowledgementHeaderExample"> </a>
+<h2><a href="MessageHeader-AcknowledgementHeaderExample.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/AcknowledgementHeaderExample: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/AcknowledgementHeaderExample: MessageHeader.destination[0].receiver (l23/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-AcknowledgementHeaderExample-fatal-error"> </a>
+<h2><a href="MessageHeader-AcknowledgementHeaderExample-fatal-error.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-fatal-error.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/AcknowledgementHeaderExample-fatal-error: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/AcknowledgementHeaderExample-fatal-error: MessageHeader.destination[0].receiver (l23/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-AcknowledgementHeaderExample-ok"> </a>
+<h2><a href="MessageHeader-AcknowledgementHeaderExample-ok.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-ok.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/AcknowledgementHeaderExample-ok: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/AcknowledgementHeaderExample-ok: MessageHeader.destination[0].receiver (l23/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-CareCommunicationMessageHeader"> </a>
+<h2><a href="MessageHeader-CareCommunicationMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-CareCommunicationMessageHeader.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/CareCommunicationMessageHeader: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/CareCommunicationMessageHeader: MessageHeader.destination[0].receiver (l27/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/CareCommunicationMessageHeader: MessageHeader.focus[0] (l37/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader"> </a>
+<h2><a href="MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader: MessageHeader.destination[0].receiver (l27/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader: MessageHeader.focus[0] (l37/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationAdmittedMessageHeader"> </a>
+<h2><a href="MessageHeader-HospitalNotificationAdmittedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmittedMessageHeader.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/HospitalNotificationAdmittedMessageHeader: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationAdmittedMessageHeader: MessageHeader.destination[0].receiver (l27/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationAdmittedMessageHeader: MessageHeader.focus[0] (l43/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader"> </a>
+<h2><a href="MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/HospitalNotificationDischargedDeceasedMessageHeader: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationDischargedDeceasedMessageHeader: MessageHeader.destination[0].receiver (l27/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationDischargedDeceasedMessageHeader: MessageHeader.focus[0] (l37/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationDischargedMessageHeader"> </a>
+<h2><a href="MessageHeader-HospitalNotificationDischargedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedMessageHeader.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/HospitalNotificationDischargedMessageHeader: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationDischargedMessageHeader: MessageHeader.destination[0].receiver (l27/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationDischargedMessageHeader: MessageHeader.focus[0] (l37/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationEndLeaveMessageHeader"> </a>
+<h2><a href="MessageHeader-HospitalNotificationEndLeaveMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationEndLeaveMessageHeader.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/HospitalNotificationEndLeaveMessageHeader: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationEndLeaveMessageHeader: MessageHeader.destination[0].receiver (l27/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationEndLeaveMessageHeader: MessageHeader.focus[0] (l37/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-HospitalNotificationOnLeaveMessageHeader"> </a>
+<h2><a href="MessageHeader-HospitalNotificationOnLeaveMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationOnLeaveMessageHeader.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/HospitalNotificationOnLeaveMessageHeader: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationOnLeaveMessageHeader: MessageHeader.destination[0].receiver (l27/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/HospitalNotificationOnLeaveMessageHeader: MessageHeader.focus[0] (l37/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_MessageHeader-MessageHeaderExample"> </a>
+<h2><a href="MessageHeader-MessageHeaderExample.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-MessageHeaderExample.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>MessageHeader/MessageHeaderExample: MessageHeader (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageHeader/MessageHeaderExample: MessageHeader.destination[0].receiver (l23/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931"> </a>
+<h2><a href="Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931: Patient.managingOrganization (l41/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Patient-5b72c625-0570-4111-b272-f0351344f8b6"> </a>
+<h2><a href="Patient-5b72c625-0570-4111-b272-f0351344f8b6.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-5b72c625-0570-4111-b272-f0351344f8b6.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/5b72c625-0570-4111-b272-f0351344f8b6: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient/5b72c625-0570-4111-b272-f0351344f8b6: Patient.managingOrganization (l41/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Patient-733cef33-3626-422b-955d-d506aaa65fe1"> </a>
+<h2><a href="Patient-733cef33-3626-422b-955d-d506aaa65fe1.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-733cef33-3626-422b-955d-d506aaa65fe1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/733cef33-3626-422b-955d-d506aaa65fe1: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient/733cef33-3626-422b-955d-d506aaa65fe1: Patient.managingOrganization (l41/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-HospitalNotificationAdmitProvenance"> </a>
+<h2><a href="Provenance-HospitalNotificationAdmitProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationAdmitProvenance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Provenance/HospitalNotificationAdmitProvenance: Provenance (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/HospitalNotificationAdmitProvenance: Provenance.target[0] (l10/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/HospitalNotificationAdmitProvenance: Provenance.agent[0].who (l28/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-HospitalNotificationEndLeaveProvenance"> </a>
+<h2><a href="Provenance-HospitalNotificationEndLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationEndLeaveProvenance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Provenance/HospitalNotificationEndLeaveProvenance: Provenance (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/HospitalNotificationEndLeaveProvenance: Provenance.target[0] (l10/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/HospitalNotificationEndLeaveProvenance: Provenance.agent[0].who (l28/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance"> </a>
+<h2><a href="Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Provenance/HospitalNotificationStartLeaveForEndLeaveProvenance: Provenance (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/HospitalNotificationStartLeaveForEndLeaveProvenance: Provenance.target[0] (l10/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/HospitalNotificationStartLeaveForEndLeaveProvenance: Provenance.agent[0].who (l28/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-HospitalNotificationStartLeaveProvenance"> </a>
+<h2><a href="Provenance-HospitalNotificationStartLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveProvenance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Provenance/HospitalNotificationStartLeaveProvenance: Provenance (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/HospitalNotificationStartLeaveProvenance: Provenance.target[0] (l10/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/HospitalNotificationStartLeaveProvenance: Provenance.agent[0].who (l28/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GIT_dk-medcom_dk-medcom_fsh-generated_resources_Provenance-NewCareCommunicationProvenance"> </a>
+<h2><a href="Provenance-NewCareCommunicationProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-NewCareCommunicationProvenance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Provenance/NewCareCommunicationProvenance: Provenance (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/NewCareCommunicationProvenance: Provenance.target[0] (l10/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Provenance/NewCareCommunicationProvenance: Provenance.agent[0].who (l28/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>Allowed MimeTypes are checked manually</b></p><ul>
+ <li>Unable to check if http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-attachmentMimeTypes is a proper subset of http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 - base value set is too large to check</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Bundle_BUNDLE_Entry_Orphan"> </a>
+<h2>Bundle_BUNDLE_Entry_Orphan</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-AcknowledgementExample-fatal-error.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-fatal-error.json</a></td><td><b>Entry 'MedComMessagingAcknowledgementHeader/OperationOutcome-error' isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-AcknowledgementExample-ok.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Bundle-AcknowledgementExample-ok.json</a></td><td><b>Entry 'MedComMessagingAcknowledgementHeader/OperationOutcome-error' isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_Aggregation"> </a>
+<h2>Reference_REF_Aggregation</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Communication-CareCommunicationContent.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Communication-CareCommunicationContent.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Communication-CareCommunicationContent.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Communication-CareCommunicationContent.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-EncounterWithLPR3Identifier.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-EncounterWithLPR3Identifier.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterAdmittetBeforeDeceased.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterFinished.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinished.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterFinished.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinished.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterFinishedWhenDeceased.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinishedWhenDeceased.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterFinishedWhenDeceased.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterFinishedWhenDeceased.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterInProgress.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterInProgress.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterInProgress.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterInProgress.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterOnLeave.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterOnLeave.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-HospitalNotificationEncounterOnLeave.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-HospitalNotificationEncounterOnLeave.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-example.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Encounter-example.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-AcknowledgementHeaderExample.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-AcknowledgementHeaderExample-fatal-error.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-fatal-error.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-AcknowledgementHeaderExample-ok.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-AcknowledgementHeaderExample-ok.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-CareCommunicationMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-CareCommunicationMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-CareCommunicationMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-CareCommunicationMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmitDeceasedMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationAdmittedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmittedMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationAdmittedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationAdmittedMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedDeceasedMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationDischargedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationDischargedMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationDischargedMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationEndLeaveMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationEndLeaveMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationEndLeaveMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationEndLeaveMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationOnLeaveMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationOnLeaveMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-HospitalNotificationOnLeaveMessageHeader.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-HospitalNotificationOnLeaveMessageHeader.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageHeader-MessageHeaderExample.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\MessageHeader-MessageHeaderExample.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-382fb8a3-6725-41e2-a615-2b1cfcfe9931.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-5b72c625-0570-4111-b272-f0351344f8b6.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-5b72c625-0570-4111-b272-f0351344f8b6.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-733cef33-3626-422b-955d-d506aaa65fe1.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Patient-733cef33-3626-422b-955d-d506aaa65fe1.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-HospitalNotificationAdmitProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationAdmitProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-HospitalNotificationAdmitProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationAdmitProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-HospitalNotificationEndLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationEndLeaveProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-HospitalNotificationEndLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationEndLeaveProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveForEndLeaveProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-HospitalNotificationStartLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-HospitalNotificationStartLeaveProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-HospitalNotificationStartLeaveProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-NewCareCommunicationProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-NewCareCommunicationProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Provenance-NewCareCommunicationProvenance.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Provenance-NewCareCommunicationProvenance.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Communication-CareCommunicationContent.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Communication-CareCommunicationContent.json</a></td><td><b>Unable to resolve resource 'Practitioner/MichaelBurns'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_NotFound_Bundle"> </a>
+<h2>Reference_REF_NotFound_Bundle</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Communication-CareCommunicationContent.html">C:\GIT\dk-medcom\dk-medcom\fsh-generated\resources\Communication-CareCommunicationContent.json</a></td><td><b>Bundled or contained reference not found within the bundle/resource Practitioner/MichaelBurns</b></td>
+   </tr>
+</table>
+</body>
+</html>

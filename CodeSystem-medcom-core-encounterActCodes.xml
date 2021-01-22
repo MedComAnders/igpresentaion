@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medcom-core-encounterActCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">other<a name="medcom-core-encounterActCodes-other"> </a></td><td>Other encounter class</td></tr></table></div>
+  </text>
+  <url value="http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes"/>
+  <version value="1.0"/>
+  <name value="MedComCoreEncounterActCodes"/>
+  <title value="MedCom Encounter Act Codes"/>
+  <status value="active"/>
+  <date value="2021-01-22T10:15:14+01:00"/>
+  <publisher value="MedCom"/>
+  <contact>
+    <name value="MedCom"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.medcom.dk"/>
+    </telecom>
+  </contact>
+  <description value="Codes added to encounter class value set for MedCom messages"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="other"/>
+    <display value="Other encounter class"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,298 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Bundle/MedComHospitalNotificationMessageAdmitExample> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MedComHospitalNotificationMessageAdmitExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message>
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "message"];
+  fhir:Bundle.timestamp [ fhir:value "2020-10-15T13:44:14Z"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "MessageHeader/HospitalNotificationAdmittedMessageHeader" ];
+     fhir:Bundle.entry.resource <MessageHeader/HospitalNotificationAdmittedMessageHeader>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Patient/733cef33-3626-422b-955d-d506aaa65fe1" ];
+     fhir:Bundle.entry.resource <Patient/733cef33-3626-422b-955d-d506aaa65fe1>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Organization/BurnCenter" ];
+     fhir:Bundle.entry.resource <Organization/BurnCenter>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Encounter/HospitalNotificationEncounterInProgress" ];
+     fhir:Bundle.entry.resource <Encounter/HospitalNotificationEncounterInProgress>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Organization/MessageReceiver" ];
+     fhir:Bundle.entry.resource <Organization/MessageReceiver>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Organization/MessageSender" ];
+     fhir:Bundle.entry.resource <Organization/MessageSender>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Provenance/HospitalNotificationAdmitProvenance" ];
+     fhir:Bundle.entry.resource <Provenance/HospitalNotificationAdmitProvenance>
+  ] .
+
+<MessageHeader/HospitalNotificationAdmittedMessageHeader> a fhir:MessageHeader;
+  fhir:Resource.id [ fhir:value "HospitalNotificationAdmittedMessageHeader"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>MedCom Report of Admission Extension</b>: true</p><p><b>event</b>: <span title=\"{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes hospital-notification-message}\">Hospital Notification Message</span></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td></td><td><a href=\"http://medcomfhir.dk/unknown\">http://medcomfhir.dk/unknown</a></td><td><a href=\"#Organization_MessageReceiver\">See above (Organization/MessageReceiver)</a></td></tr></table><p><b>sender</b>: <a href=\"#Organization_MessageSender\">See above (Organization/MessageSender)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://medcomfhir.dk/unknown\">http://medcomfhir.dk/unknown</a></td></tr></table><p><b>focus</b>: <a href=\"#Encounter_HospitalNotificationEncounterInProgress\">See above (Encounter/HospitalNotificationEncounterInProgress)</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-reportOfAdmissionExtension" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:MessageHeader.eventCoding [
+     fhir:Coding.system [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes" ];
+     fhir:Coding.code [ fhir:value "hospital-notification-message" ]
+  ];
+  fhir:MessageHeader.destination [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-destinationUseExtension" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-destinationUse" ];
+         fhir:Coding.code [ fhir:value "primary" ]
+       ]
+     ];
+     fhir:MessageHeader.destination.endpoint [ fhir:value "http://medcomfhir.dk/unknown" ];
+     fhir:MessageHeader.destination.receiver [
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/MessageReceiver>;
+       fhir:Reference.reference [ fhir:value "Organization/MessageReceiver" ]
+     ]
+  ];
+  fhir:MessageHeader.sender [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/MessageSender>;
+     fhir:Reference.reference [ fhir:value "Organization/MessageSender" ]
+  ];
+  fhir:MessageHeader.source [
+     fhir:MessageHeader.source.endpoint [ fhir:value "http://medcomfhir.dk/unknown" ]
+  ];
+  fhir:MessageHeader.focus [
+     fhir:index 0;
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterInProgress>;
+     fhir:Reference.reference [ fhir:value "Encounter/HospitalNotificationEncounterInProgress" ]
+  ] .
+
+<Patient/733cef33-3626-422b-955d-d506aaa65fe1> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "733cef33-3626-422b-955d-d506aaa65fe1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0102030405</p><p><b>name</b>: Eric Flame (OFFICIAL)</p><p><b>telecom</b>: ph: 12345678</p><p><b>address</b>: Flammesvinget 1 Aarhus 8000 C </p><p><b>managingOrganization</b>: <a href=\"#Organization_BurnCenter\">See above (Organization/BurnCenter)</a></p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.2" ];
+     fhir:Identifier.value [ fhir:value "0102030405" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "Flame" ];
+     fhir:HumanName.given [
+       fhir:value "Eric";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "12345678" ]
+  ];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "Flammesvinget 1";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Aarhus" ];
+     fhir:Address.postalCode [ fhir:value "8000 C" ]
+  ];
+  fhir:Patient.managingOrganization [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/BurnCenter>;
+     fhir:Reference.reference [ fhir:value "Organization/BurnCenter" ]
+  ] .
+
+<Organization/BurnCenter> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "BurnCenter"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123456789012345 (OFFICIAL)</p><p><b>name</b>: Aros Burn Center</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.1" ];
+     fhir:Identifier.value [ fhir:value "123456789012345" ]
+  ];
+  fhir:Organization.name [ fhir:value "Aros Burn Center"] .
+
+<Encounter/HospitalNotificationEncounterInProgress> a fhir:Encounter;
+  fhir:Resource.id [ fhir:value "HospitalNotificationEncounterInProgress"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1234567890</p><p><b>status</b>: in-progress</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span></p><p><b>subject</b>: <a href=\"#Patient_733cef33-3626-422b-955d-d506aaa65fe1\">See above (Patient/733cef33-3626-422b-955d-d506aaa65fe1)</a></p><p><b>episodeOfCare</b>: <span></span></p><p><b>period</b>: 15. okt. 2020 15.44.14 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"#Organization_BurnCenter\">See above (Organization/BurnCenter)</a></p></div>"
+  ];
+  fhir:Encounter.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "1234567890" ]
+  ];
+  fhir:Encounter.status [ fhir:value "in-progress"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+     fhir:Coding.code [ fhir:value "IMP" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Patient/733cef33-3626-422b-955d-d506aaa65fe1>;
+     fhir:Reference.reference [ fhir:value "Patient/733cef33-3626-422b-955d-d506aaa65fe1" ]
+  ];
+  fhir:Encounter.episodeOfCare [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.esundhed.dk/Registre/Landspatientsregisteret" ];
+       fhir:Identifier.value [ fhir:value "87654321-1234-1234-1234-123456789012" ]
+     ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2020-10-15T13:44:14Z"^^xsd:dateTime ]
+  ];
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/BurnCenter>;
+     fhir:Reference.reference [ fhir:value "Organization/BurnCenter" ]
+  ] .
+
+<Organization/MessageReceiver> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "MessageReceiver"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 543210987654321, id: 3210987654321</p><p><b>name</b>: Receiver Organization</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.1" ];
+     fhir:Identifier.value [ fhir:value "543210987654321" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.3.88" ];
+     fhir:Identifier.value [ fhir:value "3210987654321" ]
+  ];
+  fhir:Organization.name [ fhir:value "Receiver Organization"] .
+
+<Organization/MessageSender> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "MessageSender"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123456789012345, id: 1234567890123</p><p><b>name</b>: Sender Organization</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.1" ];
+     fhir:Identifier.value [ fhir:value "123456789012345" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.3.88" ];
+     fhir:Identifier.value [ fhir:value "1234567890123" ]
+  ];
+  fhir:Organization.name [ fhir:value "Sender Organization"] .
+
+<Provenance/HospitalNotificationAdmitProvenance> a fhir:Provenance;
+  fhir:Resource.id [ fhir:value "HospitalNotificationAdmitProvenance"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance";
+       fhir:index 0;
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>target</b>: <a href=\"#MessageHeader_HospitalNotificationAdmittedMessageHeader\">See above (MessageHeader/HospitalNotificationAdmittedMessageHeader)</a></p><p><b>occurred</b>: 15. okt. 2020 15.44.14</p><p><b>recorded</b>: 15. okt. 2020 15.45.15</p><p><b>activity</b>: <span title=\"Codes: {http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes admit-inpatient}\">Start hospital stay-admission</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href=\"#Organization_MessageSender\">See above (Organization/MessageSender)</a></td></tr></table></div>"
+  ];
+  fhir:Provenance.target [
+     fhir:index 0;
+     fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationAdmittedMessageHeader>;
+     fhir:Reference.reference [ fhir:value "MessageHeader/HospitalNotificationAdmittedMessageHeader" ]
+  ];
+  fhir:Provenance.occurredDateTime [ fhir:value "2020-10-15T13:44:14Z"^^xsd:dateTime];
+  fhir:Provenance.recorded [ fhir:value "2020-10-15T13:45:15Z"^^xsd:dateTime];
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes" ];
+       fhir:Coding.code [ fhir:value "admit-inpatient" ]
+     ]
+  ];
+  fhir:Provenance.agent [
+     fhir:index 0;
+     fhir:Provenance.agent.who [
+       fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/MessageSender>;
+       fhir:Reference.reference [ fhir:value "Organization/MessageSender" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/Bundle/MedComHospitalNotificationMessageAdmitExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

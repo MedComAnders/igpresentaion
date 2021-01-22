@@ -1,0 +1,18 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "OperationOutcome-error",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Issues</h3><table class=\"grid\"><tr><td>-</td><td><b>Severity</b></td><td><b>Code</b></td><td><b>Diagnostics</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>error</td><td>structure</td><td>Error parsing resource XML</td><td>Bundle.meta</td></tr></table></div>"
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "structure",
+      "diagnostics": "Error parsing resource XML",
+      "expression": [
+        "Bundle.meta"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "resourceType": "Bundle",
+  "id": "MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample",
+  "meta": {
+    "profile": [
+      "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message"
+    ]
+  },
+  "type": "message",
+  "timestamp": "2021-01-10T13:44:14Z",
+  "entry": [
+    {
+      "fullUrl": "MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "HospitalNotificationAdmitDeceasedMessageHeader",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>event</b>: <span title=\"{http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes hospital-notification-message}\">Hospital Notification Message</span></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td></td><td><a href=\"http://medcom.dk/unknown\">http://medcom.dk/unknown</a></td><td><a href=\"#Organization_MessageReceiver\">See above (Organization/MessageReceiver)</a></td></tr></table><p><b>sender</b>: <a href=\"#Organization_MessageSender\">See above (Organization/MessageSender)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://medcom.dk/unknown\">http://medcom.dk/unknown</a></td></tr></table><p><b>focus</b>: <a href=\"#Encounter_HospitalNotificationEncounterAdmittetBeforeDeceased\">See above (Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased)</a></p></div>"
+        },
+        "eventCoding": {
+          "system": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes",
+          "code": "hospital-notification-message"
+        },
+        "destination": [
+          {
+            "extension": [
+              {
+                "url": "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-destinationUseExtension",
+                "valueCoding": {
+                  "system": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-destinationUse",
+                  "code": "primary"
+                }
+              }
+            ],
+            "endpoint": "http://medcom.dk/unknown",
+            "receiver": {
+              "reference": "Organization/MessageReceiver"
+            }
+          }
+        ],
+        "sender": {
+          "reference": "Organization/MessageSender"
+        },
+        "source": {
+          "endpoint": "http://medcom.dk/unknown"
+        },
+        "focus": [
+          {
+            "reference": "Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Patient/5b72c625-0570-4111-b272-f0351344f8b6",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "5b72c625-0570-4111-b272-f0351344f8b6",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0101010141</p><p><b>name</b>: Erik Clausen (OFFICIAL)</p><p><b>telecom</b>: ph: 24533421</p><p><b>deceased</b>: false</p><p><b>address</b>: Forskerparken 10 Odense M 5230 </p><p><b>managingOrganization</b>: <a href=\"#Organization_PractitionerClinic\">See above (Organization/PractitionerClinic)</a></p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.208.176.1.2",
+            "value": "0101010141"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Clausen",
+            "given": [
+              "Erik"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "24533421"
+          }
+        ],
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "line": [
+              "Forskerparken 10"
+            ],
+            "city": "Odense M",
+            "postalCode": "5230"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/PractitionerClinic"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/PractitionerClinic",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "PractitionerClinic",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 378631000016009 (OFFICIAL)</p><p><b>name</b>: Test Practitioner clinic</p></div>"
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.208.176.1.1",
+            "value": "378631000016009"
+          }
+        ],
+        "name": "Test Practitioner clinic"
+      }
+    },
+    {
+      "fullUrl": "Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "HospitalNotificationEncounterAdmittetBeforeDeceased",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 7b9f8497-3314-4535-8f86-20df7b5f4d55</p><p><b>status</b>: in-progress</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span></p><p><b>subject</b>: <a href=\"#Patient_5b72c625-0570-4111-b272-f0351344f8b6\">See above (Patient/5b72c625-0570-4111-b272-f0351344f8b6)</a></p><p><b>episodeOfCare</b>: <span></span></p><p><b>period</b>: 10. jan. 2021 14.44.14 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"#Organization_PractitionerClinic\">See above (Organization/PractitionerClinic)</a></p></div>"
+        },
+        "identifier": [
+          {
+            "value": "7b9f8497-3314-4535-8f86-20df7b5f4d55"
+          }
+        ],
+        "status": "in-progress",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "IMP"
+        },
+        "subject": {
+          "reference": "Patient/5b72c625-0570-4111-b272-f0351344f8b6"
+        },
+        "episodeOfCare": [
+          {
+            "identifier": {
+              "system": "https://www.esundhed.dk/Registre/Landspatientsregisteret",
+              "value": "200040a2-e05d-4af3-91e7-5febfa8ad0b3"
+            }
+          }
+        ],
+        "period": {
+          "start": "2021-01-10T13:44:14Z"
+        },
+        "serviceProvider": {
+          "reference": "Organization/PractitionerClinic"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/MessageReceiver",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "MessageReceiver",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 543210987654321, id: 3210987654321</p><p><b>name</b>: Receiver Organization</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.208.176.1.1",
+            "value": "543210987654321"
+          },
+          {
+            "system": "urn:oid:1.3.88",
+            "value": "3210987654321"
+          }
+        ],
+        "name": "Receiver Organization"
+      }
+    },
+    {
+      "fullUrl": "Organization/MessageSender",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "MessageSender",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123456789012345, id: 1234567890123</p><p><b>name</b>: Sender Organization</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.208.176.1.1",
+            "value": "123456789012345"
+          },
+          {
+            "system": "urn:oid:1.3.88",
+            "value": "1234567890123"
+          }
+        ],
+        "name": "Sender Organization"
+      }
+    },
+    {
+      "fullUrl": "Provenance/HospitalNotificationAdmitBeforeDeceasedProvenance",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "HospitalNotificationAdmitBeforeDeceasedProvenance",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>target</b>: <a href=\"#MessageHeader_HospitalNotificationAdmitDeceasedMessageHeader\">See above (MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader)</a></p><p><b>occurred</b>: 10. jan. 2021 14.44.14</p><p><b>recorded</b>: 10. jan. 2021 14.45.15</p><p><b>activity</b>: <span title=\"Codes: {http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes admit-inpatient}\">Start hospital stay-admission</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href=\"#Organization_MessageSender\">See above (Organization/MessageSender)</a></td></tr></table></div>"
+        },
+        "target": [
+          {
+            "reference": "MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader"
+          }
+        ],
+        "occurredDateTime": "2021-01-10T13:44:14Z",
+        "recorded": "2021-01-10T13:45:15Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes",
+              "code": "admit-inpatient"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "who": {
+              "reference": "Organization/MessageSender"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

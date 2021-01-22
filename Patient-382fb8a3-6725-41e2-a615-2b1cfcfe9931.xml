@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="382fb8a3-6725-41e2-a615-2b1cfcfe9931"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0101010141</p><p><b>name</b>: Erik Clausen (OFFICIAL)</p><p><b>telecom</b>: ph: 24533421</p><p><b>deceased</b>: true</p><p><b>address</b>: Forskerparken 10 Odense M 5230 </p><p><b>managingOrganization</b>: <a href="Organization-PractitionerClinic.html">Generated Summary: id: 378631000016009 (OFFICIAL); name: Test Practitioner clinic</a></p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="0101010141"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Clausen"/>
+    <given value="Erik"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="24533421"/>
+  </telecom>
+  <deceasedBoolean value="true"/>
+  <address>
+    <line value="Forskerparken 10"/>
+    <city value="Odense M"/>
+    <postalCode value="5230"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/PractitionerClinic"/>
+  </managingOrganization>
+</Patient>

@@ -1,0 +1,1706 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/ImplementationGuide/dk.fhir.ig.medcom-core> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "dk.fhir.ig.medcom-core"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedComCore</h2><p>The official URL for this implementation guide is: </p><pre>http://medcomfhir.dk/fhir/core/1.0/ImplementationGuide/dk.fhir.ig.medcom-core</pre><div><p>The DK MedCom Core IG</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/ImplementationGuide/dk.fhir.ig.medcom-core"];
+  fhir:ImplementationGuide.version [ fhir:value "1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "MedComCore"];
+  fhir:ImplementationGuide.title [ fhir:value "DK MedCom Core"];
+  fhir:ImplementationGuide.status [ fhir:value "active"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-01-22T10:15:14+01:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "MedCom"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MedCom" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.medcom.dk" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "The DK MedCom Core IG"];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DK" ];
+       fhir:Coding.display [ fhir:value "Denmark" ]
+     ]
+  ];
+  fhir:ImplementationGuide.packageId [ fhir:value "dk.fhir.ig.medcom-core"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "dk_fhir_ig_dk_core" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core";
+       fhir:link <http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "dk.fhir.ig.dk-core" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "Build CI" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-juristiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://medcomfhir.dk/fhir/core/1.0/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-careCommunication-communication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComCareCommunication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Care related communication between two or more parties in Danish healthcare" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-careCommunication-message" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComCareCommunicationMessage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message for communication care related information between parties in Danish Health Care using MedCom Standards" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-careCommunication-messageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComCareCommunicationMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for care communication message" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-eanIdentifier>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-core-eanIdentifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComCoreEANIdentifier" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EAN identifier issued by MedCom" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-core-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComCoreEncounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An interaction between a patient/citizen and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient/citizen." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-core-lpr3Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComCoreLpr3Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter which is part of an episode of care reported to the Danish National Patient Registry" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-core-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComCoreOrganization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A formally recognized organizations within danish healthcare, registered with a SOR identifier issued by The Danish Health Data Authority" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-core-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComCorePatient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient/citizen resource to use as subject in MedCom communication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-hospitalNotification-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComHospitalNotificationEncounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter derivation that handles hospital notification when a patient is admitted to a hospital. The hospital notification is always send from a hospital. The receiver of the message is the patients home municipalicy. The hospital notification is send for example when patient is admitted, on leave, returned from leave, finished hospital stay." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-hospitalNotification-message" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComHospitalNotificationMessage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A message for a Hospital Notification. The message is triggered as patients are admitted, onleave or has finished a hospital stay in order to notify the relevant Municipalicy home care" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-hospitalNotification-messageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComHospitalNotificationMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for a hospital notification message." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-messaging-acknowledgement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComMessagingAcknowledgement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Base resource for all MedCom Acknowledgement messages." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-messaging-acknowledgementHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComMessagingAcknowledgementHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A resource that describes a reponse to a message that is exchanged as a MedCom messgage within danish healthcare" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-message>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-messaging-message" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComMessagingMessage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Base resource for all MedCom messages." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-messaging-messageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComMessagingMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message Header for MedCom message bundles" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-messaging-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComMessagingOrganization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A formally recognized organizations registered for exchanging messages within danish healthcare, registered with a EAN identifier issued by MedCom" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-messaging-provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedComMessagingProvenance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provenance information about the messages preceeding the current message" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-author-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-core-author-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Payload Author Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Reference to author of this payload" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-datetime-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-core-datetime-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Payload DateTime Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date and time of this payload" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-reportOfAdmissionExtension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-messaging-reportOfAdmissionExtension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Report of Admission Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether the recipient should send a report of admission" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-destinationUseExtension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medcom-messaging-destinationUseExtension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Destination Use Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether the use of a destination in a MedCom message header is as a primary or a carbon copy recipient of the message" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-categories>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-careCommunication-categories" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Care Communication Category Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet containing category codes for care communication messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-messagingActivities>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-careCommunication-messagingActivities" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Care Communication Message Activity Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet containg activity codes for care communication messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-careCommunication-requestPriority>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-careCommunication-requestPriority" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Care Request Priority Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet containg priority codes for care communication messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-attachmentMimeTypes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-core-attachmentMimeTypes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Attachment MimeTypes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet containing allowed mime types for MedCom messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-encounterClass>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-core-encounterClass" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Core Encounter Class Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet containg class codes for MedCom core encounter" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-encounterClass>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-hospitalNotification-encounterClass" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom hospital notification encounter class Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet containg class codes for hospital notification encounter" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-encounterstatus>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-hospitalNotification-encounterstatus" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom hospital notification encounter status Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet containing status codes for hospital notification encounter" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-hospitalNotification-messageActivities>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-hospitalNotification-messageActivities" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Message Activity Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet containg activity codes for hospital notification messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-messageTypes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-messaging-messageTypes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Messaging Message Types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "All message types for MedCom messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-messaging-vans-statisticalCode-combinations>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medcom-messaging-vans-statisticalCode-combinations" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Messaging Vans StatisticalCode Combinations" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedCom Messaging Vans StatisticalCode Combinations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/medcom-careCommunication-categoryCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Care Communication Categories" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Category codes for care communication messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-core-encounterActCodes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/medcom-core-encounterActCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Encounter Act Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes added to encounter class value set for MedCom messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/medcom-messaging-activityCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Message Activity Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Activity codes for MedCom messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/medcom-messaging-eventCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Message Events" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message events for MedCom messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-destinationUse>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/medcom-messaging-destinationUse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Messaging Destination Use" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicatin whether the use of a destination in a MedCom message header is as a primary or a carbon copy recipient of the message" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-statisticalCodes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/medcom-messaging-statisticalCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Messaging Statistical Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Statistical Codes for MedCom VANS messages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931>;
+         fhir:Reference.reference [ fhir:value "Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Erik Clausen" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient deceased with a managing organization. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient>
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Patient/5b72c625-0570-4111-b272-f0351344f8b6>;
+         fhir:Reference.reference [ fhir:value "Patient/5b72c625-0570-4111-b272-f0351344f8b6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Erik Clausen" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient not deceased with a managing organization. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient>
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Patient/733cef33-3626-422b-955d-d506aaa65fe1>;
+         fhir:Reference.reference [ fhir:value "Patient/733cef33-3626-422b-955d-d506aaa65fe1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Eric Flame" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient with a managing organization. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-patient>
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/AcknowledgementExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/AcknowledgementExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AcknowledgementExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Acknowledgement message." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement>
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/AcknowledgementExample-fatal-error>;
+         fhir:Reference.reference [ fhir:value "Bundle/AcknowledgementExample-fatal-error" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AcknowledgementExample-fatal-error" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a fatal-error Acknowledgement message." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement>
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/AcknowledgementExample-ok>;
+         fhir:Reference.reference [ fhir:value "Bundle/AcknowledgementExample-ok" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AcknowledgementExample-ok" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a ok Acknowledgement message." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgement>
+       ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/AcknowledgementHeaderExample>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/AcknowledgementHeaderExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AcknowledgementHeaderExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for an empty message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader>
+       ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/AcknowledgementHeaderExample-fatal-error>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/AcknowledgementHeaderExample-fatal-error" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AcknowledgementHeaderExample-fatal-error" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for an fatal-error message" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader>
+       ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/AcknowledgementHeaderExample-ok>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/AcknowledgementHeaderExample-ok" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AcknowledgementHeaderExample-ok" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for an ok message" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader>
+       ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/BurnCenter>;
+         fhir:Reference.reference [ fhir:value "Organization/BurnCenter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Aros Burn Center" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A core organization with a SOR identifier." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization>
+       ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Communication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Communication/CareCommunicationContent>;
+         fhir:Reference.reference [ fhir:value "Communication/CareCommunicationContent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of Care Communication Content" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Content of care communication message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-communication>
+       ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/CareCommunicationMessageExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/CareCommunicationMessageExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Care Communication Message Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a care communication message." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message>
+       ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/CareCommunicationMessageForwardExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/CareCommunicationMessageForwardExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Care Communication Forward Message Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a forward of a care communication message." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message>
+       ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/CareCommunicationMessageHeader>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/CareCommunicationMessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CareCommunicationMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for care communication message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader>
+       ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/CareCommunicationMessageReplyExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/CareCommunicationMessageReplyExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Care Communication Reply Message Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a reply to a care communication message." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-message>
+       ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/EmptyMessage>;
+         fhir:Reference.reference [ fhir:value "Bundle/EmptyMessage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EmptyMessage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an emty message." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-message>
+       ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/EncounterWithLPR3Identifier>;
+         fhir:Reference.reference [ fhir:value "Encounter/EncounterWithLPR3Identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter with LPR3 identifier" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter with an identifier that may be a LPR3 id. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-lpr3Encounter>
+       ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/HospitalNotificationAdmitDeceasedMessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationAdmitDeceasedMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for a hospital notification admit message when patient later is deceased. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>
+       ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Provenance/HospitalNotificationAdmitProvenance>;
+         fhir:Reference.reference [ fhir:value "Provenance/HospitalNotificationAdmitProvenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationAdmitProvenance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance>
+       ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationAdmittedMessageHeader>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/HospitalNotificationAdmittedMessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationAdmittedMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for a hospital notification admit message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationDischargedDeceasedMessageHeader>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/HospitalNotificationDischargedDeceasedMessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationDischargedDeceasedMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for a hospital notification discharge message when patient is deceased. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationDischargedMessageHeader>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/HospitalNotificationDischargedMessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationDischargedMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for a hospital notification discharge message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>
+       ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased>;
+         fhir:Reference.reference [ fhir:value "Encounter/HospitalNotificationEncounterAdmittetBeforeDeceased" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Encounter admitted before deceased" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Noticication inpatient Encounter when patient is admitted" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterFinished>;
+         fhir:Reference.reference [ fhir:value "Encounter/HospitalNotificationEncounterFinished" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Encounter in progress" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Noticication inpatient Encounter in progress with Burncenter as serviceProvider" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>
+       ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterFinishedWhenDeceased>;
+         fhir:Reference.reference [ fhir:value "Encounter/HospitalNotificationEncounterFinishedWhenDeceased" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Encounter finished" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Noticication inpatient Encounter finished, patient deceased" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>
+       ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterInProgress>;
+         fhir:Reference.reference [ fhir:value "Encounter/HospitalNotificationEncounterInProgress" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Encounter in progress" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Noticication inpatient Encounter in progress with Burncenter as serviceProvider" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>
+       ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/HospitalNotificationEncounterOnLeave>;
+         fhir:Reference.reference [ fhir:value "Encounter/HospitalNotificationEncounterOnLeave" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Encounter on leave" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Noticication inpatient Encounter on leave with Burncenter as serviceProvider" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-encounter>
+       ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationEndLeaveMessageHeader>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/HospitalNotificationEndLeaveMessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationEndLeaveMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for a hospital notification start leave message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>
+       ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Provenance/HospitalNotificationEndLeaveProvenance>;
+         fhir:Reference.reference [ fhir:value "Provenance/HospitalNotificationEndLeaveProvenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationEndLeaveProvenance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance>
+       ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/HospitalNotificationOnLeaveMessageHeader>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/HospitalNotificationOnLeaveMessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationOnLeaveMessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message header for a hospital notification start leave message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader>
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Provenance/HospitalNotificationStartLeaveForEndLeaveProvenance>;
+         fhir:Reference.reference [ fhir:value "Provenance/HospitalNotificationStartLeaveForEndLeaveProvenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationStartLeaveForEndLeaveProvenance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance>
+       ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Provenance/HospitalNotificationStartLeaveProvenance>;
+         fhir:Reference.reference [ fhir:value "Provenance/HospitalNotificationStartLeaveProvenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HospitalNotificationStartLeaveProvenance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance>
+       ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/MedComHospitalNotificationMessageAdmitExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/MedComHospitalNotificationMessageAdmitExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Message Admit Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Notification Admit" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message>
+       ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/MedComHospitalNotificationMessageAdmittedBeforeDeceasedExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Message Admitted before Deceased Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Notification admit when patient is later deceased" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message>
+       ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/MedComHospitalNotificationMessageDischargeDeceasedExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Message Discharge Deceased Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Notification Discharge when patient is deceased" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message>
+       ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/MedComHospitalNotificationMessageDischargeExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/MedComHospitalNotificationMessageDischargeExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Message Discharge Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Notification Discharge" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message>
+       ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/MedComHospitalNotificationMessageEndLeaveExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/MedComHospitalNotificationMessageEndLeaveExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Message End Leave Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Notification End Leave" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message>
+       ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Bundle/MedComHospitalNotificationMessageStartLeaveExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/MedComHospitalNotificationMessageStartLeaveExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Hospital Notification Message Start Leave Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of MedCom Hospital Notification Start Leave" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-message>
+       ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/MessageHeader/MessageHeaderExample>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/MessageHeaderExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MessageHeaderExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message Header for an empty message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader>
+       ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/MessageReceiver>;
+         fhir:Reference.reference [ fhir:value "Organization/MessageReceiver" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MessageReceiver" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an organization with a SOR and an EAN identifier." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization>
+       ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/MessageSender>;
+         fhir:Reference.reference [ fhir:value "Organization/MessageSender" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MessageSender" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an organization with a SOR and an EAN identifier." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-organization>
+       ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Provenance/NewCareCommunicationProvenance>;
+         fhir:Reference.reference [ fhir:value "Provenance/NewCareCommunicationProvenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NewCareCommunicationProvenance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provenance information for a medcom message. Valid only if used in a bundle (message)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance>
+       ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationOutcome" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/OperationOutcome/OperationOutcome-error>;
+         fhir:Reference.reference [ fhir:value "OperationOutcome/OperationOutcome-error" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OperationOutcome-error" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a error operationOutcome" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationOutcome" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/OperationOutcome/OperationOutcome-ok>;
+         fhir:Reference.reference [ fhir:value "OperationOutcome/OperationOutcome-ok" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OperationOutcome-ok" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a ok operationOutcome" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Organization/PractitionerClinic>;
+         fhir:Reference.reference [ fhir:value "Organization/PractitionerClinic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner Clinic" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An organization with a SOR identifier." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization>
+       ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/Encounter/example>;
+         fhir:Reference.reference [ fhir:value "Encounter/example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedCom Core Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a simple MedCom Core Encounter" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-encounter";
+         fhir:link <http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-encounter>
+       ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "extensions.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Extensions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medcomfhir.dk/fhir/core/1.0/ImplementationGuide/dk.fhir.ig.medcom-core.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
